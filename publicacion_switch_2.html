@@ -5,7 +5,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://use.fontawesome.com/16e25eb0e0.js"></script>
-
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<!--fonts-->
 			<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
@@ -23,7 +22,7 @@
 	    <script type="text/javascript" src="./js/backend.js"></script>
 	    <script src="./js/bootstrap-rating-input.min.js" type="text/javascript"></script>
 	    <!--Función para rotar los carets en los dropdowns-->
-		<script>
+	    <script>
 		  $(function(){
 		    $(".dropdown").on("show.bs.dropdown hide.bs.dropdown", function(){
 		      $(this).find(".glyphicon-menu-down").toggleClass("caretup");
@@ -60,56 +59,22 @@
 					    </div>
 					    <div id="navbar" class="navbar-collapse collapse">
 						    <ul class="nav navbar-nav">
-						      <li><a class="barBoton resaltar" href="index_auth.html" id="inicio">Inicio</a></li>
-						      <li><a class="barBoton resaltar" href="analisis_auth.html" id="analisis">Análisis</a></li>
-						      <li><a class="barBoton resaltar" href="populares_auth.html" id="populares">Populares</a></li>
+						      <li><a class="barBoton resaltar" href="index.html" href="#" id="inicio">Inicio</a></li>
+						      <li><a class="barBoton resaltar" href="analisis.html" id="analisis">Análisis</a></li>
+						      <li><a class="barBoton resaltar" href="populares.html" id="populares">Populares</a></li>
 						      <li class="dropdown">
-						        <a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="consolas">Consolas &nbsp;<span class="glyphicon glyphicon-menu-down"></span></a>
+						        <a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="consolas">Consolas &nbsp;<span class="	glyphicon glyphicon-menu-down"></span></a>
 						        <ul class="dropdown-menu bar">
-						          <li><a class="sobre" href="ps4_auth.html">PS4</a></li>
-						          <li><a class="sobre" href="xbox_auth.html">XBOX ONE</a></li>
-						          <li><a class="sobre" href="switch_auth.html">NINTENDO SWITCH</a></li>
+						          <li><a class="sobre" href="ps4.html">PS4</a></li>
+						          <li><a class="sobre" href="xbox.html">XBOX ONE</a></li>
+						          <li><a class="sobre" href="switch.html">NINTENDO SWITCH</a></li>
 						        </ul>
 						      </li>
-						      <li><a class="barBoton resaltar" href="contacto_auth.html" id="contacto">Contacto</a></li>
+						      <li><a class="barBoton resaltar" href="contacto.html" id="contacto">Contacto</a></li>
 						    </ul>
 					        <ul class="nav navbar-nav navbar-right">
-					      	  <li class="dropdown inset">
-						        <a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="NombreUsario"><img src="img/Profilepics/raineb.jpg" class="userImage" alt="Avatar"> &nbsp; RAINEB &nbsp; <span class="	glyphicon glyphicon-menu-down"></span></a>
-						        <ul class="dropdown-menu bar perfilMenu">
-						        	<li>
-			                            <div class="navbar-login">
-			                                <div class="row">
-			                                    <div class="col-lg-12">
-			                                        <p class="text-center">
-			                                            <img src="img/Profilepics/raineb.jpg" class="userImage2" alt="Avatar">
-			                                        </p>
-			                                    </div>
-			                                    <div class="col-lg-12">
-			                                        <p class="text-left"><strong>Raquel Escalante</strong></p>
-			                                        <p class="text-left small">raquel@email.com</p>
-			                                        <p class="text-left">
-			                                            <a href="perfil.html" class="btn btn-primary btn-block btn-sm">Editar Perfil</a>
-			                                            <a href="admin_pub.html" class="btn btn-primary btn-block btn-sm">Mis Publicaciones</a>
-			                                        </p>
-			                                    </div>
-			                                </div>
-			                            </div>
-			                        </li>
-			                        <li class="divider"></li>
-			                        <li>
-			                            <div class="navbar-login navbar-login-session">
-			                                <div class="row">
-			                                    <div class="col-lg-12">
-			                                        <p>
-			                                            <a href="index.html" class="btn btn-danger btn-block">Cerrar Sesion</a>
-			                                        </p>
-			                                    </div>
-			                                </div>
-			                            </div>
-			                        </li>
-						        </ul>
-						      </li>
+					      	  <li><a class="barBoton right resaltar" href="#" data-toggle="modal" data-target="#myModal" id="registrar">Registrar</a></li>
+					      	  <li><a class="barBoton right resaltar" href="#" data-toggle="modal" data-target="#myModal2" id="inicioS">Iniciar Sesión</a></li>
 						    </ul>
 						</div>
 					  </div>
@@ -167,7 +132,7 @@
 		<div id="myModal2" class="modal fade ff-poppins" role="dialog">
 		  <div class="modal-dialog modal-sm">
 		    <!-- Modal content-->
-		    <div class="modal-content mod">
+		    <div id="inicio" class="modal-content mod">
 		      <div class="modal-header"  style="border: none; padding-top: 5%; padding-bottom: 1%;">
 		        <button type="button" class="close" data-dismiss="modal">&times;</button>
 		        <center><strong><h4 class="modal-title">Iniciar Sesión</h4></strong></center>
@@ -187,7 +152,42 @@
 		      <div class="modal-footer" style="border: none;">
 		      	<div class="row">
 		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		        		<center><button type="button" class="btn modalBoton" data-dismiss="modal">Iniciar Sesión</button></center>
+		        		<center><button onclick="location.href = 'publicacion_switch_2_auth.html';" type="button" class="btn modalBoton" data-dismiss="modal">Iniciar Sesión</button></center>
+		      		</div>
+		      	</div>
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		      			<br>
+		        		<center><a data-toggle="modal" data-target="#myModal3" data-dismiss="modal">¿Olvido su Contraseña?</a></center>
+		      		</div>
+		      	</div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div id="myModal3" class="modal fade ff-poppins" role="dialog">
+		  <div class="modal-dialog modal-sm">
+		    <!-- Modal content-->
+		    <div id="recuperar" class="modal-content mod">
+		      <div class="modal-header"  style="border: none; padding-top: 5%; padding-bottom: 1%;">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <center><strong><h4 class="modal-title">Enviar Contraseña</h4></strong></center>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		      			<input type="email" name="email" placeholder="Correo">
+		      		</div>
+		      	</div>
+		      </div>
+		      <div class="modal-footer" style="border: none;">
+		      	<div class="row">
+		      		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+		        		<center><button type="button"  data-toggle="modal" data-target="#myModal2" class="btn modalBoton" data-dismiss="modal">Volver</button></center>
+		      		</div>
+		      		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+		        		<center><button type="button" class="btn modalBoton" data-dismiss="modal">Enviar</button></center>
 		      		</div>
 		      	</div>
 		      </div>
@@ -196,45 +196,30 @@
 		  </div>
 		</div>
 		<!-- Fin Modal -->
-<!-- Body Inicio -->
+		<!-- Body Inicio -->
 		<div class="container  body">
 			<div class="row">
 				<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 topPad">
 					<div class="publicacion">
 						<center>
 							<div class="pub-title-container">
-								<h1 class="ff-amaranth ft-upper">Localización de todas las fotos del episodio 1 de life is strange para móviles.</h1>
-								<h4 class="ff-poppins fs-small">Publicado el 05/02/18 | Autor: <a href="#">RaineB</a> | Categoría: <a href="analisis.html">Análisis</a></h4>
+								<h1 class="ff-amaranth ft-upper">Te contamos qué tan fácil es jugar con los cartones de Nintendo Labo</h1>
+								<h4 class="ff-poppins fs-small">Publicado el 05/01/18 | Autor: <a href="#">Carlosjj</a> | Categoría: <a href="populares.html">Populares</a>, <a href="switch.html">Switch</a></h4>
 							</div>
 						</center>
-						<img src="img/Noticia2.1.jpg" class="pub-img-container">
+						<img src="img/labo1.jpg" class="pub-img-container">
 						<div class="pub-container ff-poppins">
-							<p>Con nuestra guía podrás conocer la localización de todas las fotos en Life is Strange para móviles, una nueva versión del juego que llega a IOS y Android con una jugabilidad adaptada a estos dispositivos.</p>
-							<p>La obra cumbre de Dontnod también se ha adaptado a móviles tras su paso por consolas y ordenador, y lo hace con un Life is Strange para iOS y Android que no desmerece en absoluto respecto al juego original, y lo mejor de todo es que nos llega con una jugabilidad adaptada a lo táctil. En sí estamos ante el mismo Life is Strange que disfrutamos hace unos años, pero ahora en formato portátil, aunque igualmente divertido.</p>
-							<p>Uno de los principales retos a los que te enfrentarás es sobre la localización de todas las fotos en Life is Strange, teniendo hasta diez de ellas en cada uno de sus cinco capítulos. En la presente guía nos vamos a centrar en todas esas instantáneas que debemos crear y localizar en el primer capítulo de Life is Strange.</p>
-							<img src="img/Noticia2.2.jpg" class="pub-inner-img-container">
-							<p><b>Escuela (1 foto)</b></p>
-							<p>Después de la charla de clase al principio del juego, ve hacia el pupitre que tienes un poco más adelante e investiga las marcas de la mesa. Ahí tomarás una foto.</p>
-							<br>
-							<p><b>Campus (2 fotos)</b></p>
-							<p>En el campus encontrarás una estatua, cerca de la entrada. Observa la estatua hasta que te aparezca la opción de hacer la foto.</p>
-							<p>Ahora habla con los skaters que están frente la estatua y en concreto con Justin. Te tocará rebobinar y seleccionar The Flip para hacer la foto del skater en el suelo.</p>
-							<br>
-							<p><b>Dormitorios (1 foto)</b></p>
-							<p>Corre al otro extremo, donde verás a Kate sentada mirando a los árboles. A la derecha del árbol más cercano verás una ardilla y una lata de cerveza y podrás tomar la foto.</p>
-							<br>
-							<p><b>Dormitorio de chicas (2 fotos)</b></p>
-							<p>Ve al dormitorio de Max y mírate al espejo para hacer la foto.</p>
-							<p>Ahora debes leer la nota de la mesa, habla con Juliet en el pasillo, y ve finamente a la habitación de Victoria donde verás un collage de fotos sobre la pared. Ahora puedes hacer la foto.</p>
-							<br>
-							<p><b>Dormitorios (exterior)</b></p>
-							<p>Cuando empieces esta parte te tocará rebobinar antes de que golpeen a Alyssa. Ahora corre, adviértela y toma una foto de la ventana hacia donde ha ido la bola.</p>
-							<br>
-							<p><b>Aparcamientos (1 foto)</b></p>
-							<p>En la esquina del aparcamiento hay una caravana. Dibuja sobre la ventana y podrás hacer una foto.</p>
+							<p>El mes pasado, Nintendo nos sorprendió con el anuncio de lo que podrían ser algunos de los productos más extraños que haya producido. Nintendo Labo, una plataforma educativa para el Nintendo Switch que permite construir piezas funcionales de cartón, incluyendo controles para minijuegos y dispositivos de control remoto, que Nintendo llama “Toy-Cons”.</p>
+							<p>Aunque es un concepto único, puede que no sea interesante para todos. Labo es específicamente para niños y sus familias, así que si eres un ávido jugador y te parece un concepto simple, no te equivocas. No fue hecho para tí. Sin embargo, si estás dispuesto a escuchar a ese niño que casi todos llevamos dentro, Labo puede abrir tus horizontes.</p>
+							<p>Los Toy-Cons de Labo se parecen más a juguetes creativos tipo Lego, que a piezas periféricas de un videojuego. Aunque muchos de ellos tienen juegos de compañía con los que interactúan, las piezas no son especialmente interesantes por sí mismas. La diversión viene del acto de tomar un pedazo de cartón y hacerlo parecer un objeto del mundo real, para luego jugar con él y verlo cobrar vida.</p>
+							<p>Es imaginación manifestada y, simplemente, mágica.</p>
+							<img src="img/labo2.jpg" class="pub-inner-img-container">
+							<p>Construir un Toy-Con es la mitad de la diversión. Cada uno es como un ejercicio de origami guiado. Sacas pedazos de cartón previamente cortados, los doblas en los lugares correctos, los pones juntos y ¡listo! Tienes un Toy-Con. No hay que cortar, pegar, marcar, o hacer otra cosa que pueda cansar a los padres, y las instrucciones son tan simples que la mayoría de los niños de 8 años en adelantea probablemente podrían construirlos con poca o ninguna ayuda.</p>
+							<p>Cada Toy-Con incluye también instrucciones interactivas detalladas y paso a paso. La guía, que se encuentra en el juego de Nintendo Labo en el Switch, combina instrucciones escritas  con un modelo visual en 3D, para que puedas ver exactamente cómo se debe doblar cada pieza y dónde se inserta cada pestaña. Ikea podría aprender mucho de Nintendo.</p>
+							<p>Sin embargo, aunque sencilla, es una actividad que consume mucho tiempo y exige atención. Como son de cartón, debes presionar cada pliegue hacia abajo con fuerza y ​​sostenerlo por un par de segundos para asegurarse de que esté firme. Si las manualidades no te interesan, tal vez este no sea el juego para ti.</p>
 							<div class="tag-container">
 								<h2 class="ff-amaranth ft-upper">Etiquetas:</h2>
-								<h5 class="ff-poppins"><a href="#">Móvil</a>, <a href="#">Life</a>, <a href="#">Strange</a></h5>
+								<h5 class="ff-poppins"><a href="#">Nintendo</a>, <a href="#">Portatil</a>, <a href="#">Labo</a></h5>
 								<div class="row rating-share ff-poppins">
 									<div class="col-lg-7 col-md-7 col-sm-8 col-xs-8">
 										Comparte en Redes Sociales:
@@ -253,11 +238,11 @@
 						<div class="author-container">
 							<div class="row">
 								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-									<img class="img-responsive" src="img/Profilepics/raineb.jpg">
+									<img class="img-responsive" src="img/Profilepics/carlosjj.jpg">
 								</div>
 								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-									<h2 class="ff-amaranth ft-upper"><a href="#">RaineB</a></h2>
-									<p class="ff-poppins">Aficionada a los videojuegos y estudiante de computación, en mis tiempos libres me gusta leer noticias sobres consolas y videojuegos  nuevos además de escribir sobre estos para mostrarle a las demás personas lo interesante de los videojuegos.</p>
+									<h2 class="ff-amaranth ft-upper"><a href="#">Carlosjj</a></h2>
+									<p class="ff-poppins">Amante de los videojuegos y fan de playstation. Amo jugar tomb raider y uncharted cuando no estoy escribiendo en el blog o estudiando computación. Creo que los teléfonos móviles también sirven para jugar aunque solo eventualmente.</p>
 								</div>
 							</div>
 						</div>
@@ -267,25 +252,21 @@
 								<h1 class="ff-amaranth ft-upper" style="padding-bottom: 2%">Comentarios</h1>
 								<div class="comment-container">
 									<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-										<img class="img-responsive img-round" src="img/Profilepics/satonakada.jpg">
+										<img class="img-responsive img-round" src="img/Profilepics/raineb.jpg">
 									</div>
 									<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-										<h3 class="ff-amaranth"><a href="#">SatoNakada</a></h3>
-										<p class="ff-poppins">Excelente Juego!!!!! Lo acostumbro a jugar en mi tiempo libre y este post realmente me ha ayudado.</p>
+										<h3 class="ff-amaranth"><a href="#">Raineb</a></h3>
+										<p class="ff-poppins">Esta muy bien pensado!</p>
 										<hr>
 									</div>
 								</div>
 							</div>						
 						</div>
-						<form>
-							<div class="comment-form row">
-								<div class="col-lg-8 col-md-8 col-sm-10 col-xs-10 center-block">
-									<label for="comment" class="ff-amaranth fs-med">Escribe tu comentario:</label>
-		 							<textarea class="form-control" rows="5" id="comment"></textarea>
-		 							<button onclick="location.href = 'publicacion_auth.html';" type="button" class="btn contactoBoton ff-poppins center-block">Enviar Comentario</button>
-	 							</div>
-							</div>
-						</form>
+						<div class="row">
+							<div class="col-lg-4 col-md-4 col-sm-10 col-xs-10 center-block">
+				      			<button type="button" class="btn contactoBoton ff-poppins center-block" data-toggle="modal" data-target="#myModal2">Iniciar sesión para comentar</button>
+				      		</div>
+			      		</div>
 					</div>					
 				</div>
 				<!-- Fin publicación -->

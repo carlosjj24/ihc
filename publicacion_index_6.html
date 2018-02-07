@@ -5,7 +5,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://use.fontawesome.com/16e25eb0e0.js"></script>
-
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<!--fonts-->
 			<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
@@ -23,7 +22,7 @@
 	    <script type="text/javascript" src="./js/backend.js"></script>
 	    <script src="./js/bootstrap-rating-input.min.js" type="text/javascript"></script>
 	    <!--Función para rotar los carets en los dropdowns-->
-		<script>
+	    <script>
 		  $(function(){
 		    $(".dropdown").on("show.bs.dropdown hide.bs.dropdown", function(){
 		      $(this).find(".glyphicon-menu-down").toggleClass("caretup");
@@ -60,56 +59,22 @@
 					    </div>
 					    <div id="navbar" class="navbar-collapse collapse">
 						    <ul class="nav navbar-nav">
-						      <li><a class="barBoton resaltar" href="index_auth.html" id="inicio">Inicio</a></li>
-						      <li><a class="barBoton resaltar" href="analisis_auth.html" id="analisis">Análisis</a></li>
-						      <li><a class="barBoton resaltar" href="populares_auth.html" id="populares">Populares</a></li>
+						      <li><a class="barBoton resaltar" href="index.html" href="#" id="inicio">Inicio</a></li>
+						      <li><a class="barBoton resaltar" href="analisis.html" id="analisis">Análisis</a></li>
+						      <li><a class="barBoton resaltar" href="populares.html" id="populares">Populares</a></li>
 						      <li class="dropdown">
-						        <a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="consolas">Consolas &nbsp;<span class="glyphicon glyphicon-menu-down"></span></a>
+						        <a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="consolas">Consolas &nbsp;<span class="	glyphicon glyphicon-menu-down"></span></a>
 						        <ul class="dropdown-menu bar">
-						          <li><a class="sobre" href="ps4_auth.html">PS4</a></li>
-						          <li><a class="sobre" href="xbox_auth.html">XBOX ONE</a></li>
-						          <li><a class="sobre" href="switch_auth.html">NINTENDO SWITCH</a></li>
+						          <li><a class="sobre" href="ps4.html">PS4</a></li>
+						          <li><a class="sobre" href="xbox.html">XBOX ONE</a></li>
+						          <li><a class="sobre" href="switch.html">NINTENDO SWITCH</a></li>
 						        </ul>
 						      </li>
-						      <li><a class="barBoton resaltar" href="contacto_auth.html" id="contacto">Contacto</a></li>
+						      <li><a class="barBoton resaltar" href="contacto.html" id="contacto">Contacto</a></li>
 						    </ul>
 					        <ul class="nav navbar-nav navbar-right">
-					      	  <li class="dropdown inset">
-						        <a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="NombreUsario"><img src="img/Profilepics/raineb.jpg" class="userImage" alt="Avatar"> &nbsp; RAINEB &nbsp; <span class="	glyphicon glyphicon-menu-down"></span></a>
-						        <ul class="dropdown-menu bar perfilMenu">
-						        	<li>
-			                            <div class="navbar-login">
-			                                <div class="row">
-			                                    <div class="col-lg-12">
-			                                        <p class="text-center">
-			                                            <img src="img/Profilepics/raineb.jpg" class="userImage2" alt="Avatar">
-			                                        </p>
-			                                    </div>
-			                                    <div class="col-lg-12">
-			                                        <p class="text-left"><strong>Raquel Escalante</strong></p>
-			                                        <p class="text-left small">raquel@email.com</p>
-			                                        <p class="text-left">
-			                                            <a href="perfil.html" class="btn btn-primary btn-block btn-sm">Editar Perfil</a>
-			                                            <a href="admin_pub.html" class="btn btn-primary btn-block btn-sm">Mis Publicaciones</a>
-			                                        </p>
-			                                    </div>
-			                                </div>
-			                            </div>
-			                        </li>
-			                        <li class="divider"></li>
-			                        <li>
-			                            <div class="navbar-login navbar-login-session">
-			                                <div class="row">
-			                                    <div class="col-lg-12">
-			                                        <p>
-			                                            <a href="index.html" class="btn btn-danger btn-block">Cerrar Sesion</a>
-			                                        </p>
-			                                    </div>
-			                                </div>
-			                            </div>
-			                        </li>
-						        </ul>
-						      </li>
+					      	  <li><a class="barBoton right resaltar" href="#" data-toggle="modal" data-target="#myModal" id="registrar">Registrar</a></li>
+					      	  <li><a class="barBoton right resaltar" href="#" data-toggle="modal" data-target="#myModal2" id="inicioS">Iniciar Sesión</a></li>
 						    </ul>
 						</div>
 					  </div>
@@ -167,7 +132,7 @@
 		<div id="myModal2" class="modal fade ff-poppins" role="dialog">
 		  <div class="modal-dialog modal-sm">
 		    <!-- Modal content-->
-		    <div class="modal-content mod">
+		    <div id="inicio" class="modal-content mod">
 		      <div class="modal-header"  style="border: none; padding-top: 5%; padding-bottom: 1%;">
 		        <button type="button" class="close" data-dismiss="modal">&times;</button>
 		        <center><strong><h4 class="modal-title">Iniciar Sesión</h4></strong></center>
@@ -187,7 +152,42 @@
 		      <div class="modal-footer" style="border: none;">
 		      	<div class="row">
 		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		        		<center><button type="button" class="btn modalBoton" data-dismiss="modal">Iniciar Sesión</button></center>
+		        		<center><button onclick="location.href = 'publicacion_index_6_auth.html';" type="button" class="btn modalBoton" data-dismiss="modal">Iniciar Sesión</button></center>
+		      		</div>
+		      	</div>
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		      			<br>
+		        		<center><a data-toggle="modal" data-target="#myModal3" data-dismiss="modal">¿Olvido su Contraseña?</a></center>
+		      		</div>
+		      	</div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div id="myModal3" class="modal fade ff-poppins" role="dialog">
+		  <div class="modal-dialog modal-sm">
+		    <!-- Modal content-->
+		    <div id="recuperar" class="modal-content mod">
+		      <div class="modal-header"  style="border: none; padding-top: 5%; padding-bottom: 1%;">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <center><strong><h4 class="modal-title">Enviar Contraseña</h4></strong></center>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		      			<input type="email" name="email" placeholder="Correo">
+		      		</div>
+		      	</div>
+		      </div>
+		      <div class="modal-footer" style="border: none;">
+		      	<div class="row">
+		      		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+		        		<center><button type="button"  data-toggle="modal" data-target="#myModal2" class="btn modalBoton" data-dismiss="modal">Volver</button></center>
+		      		</div>
+		      		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+		        		<center><button type="button" class="btn modalBoton" data-dismiss="modal">Enviar</button></center>
 		      		</div>
 		      	</div>
 		      </div>
@@ -196,45 +196,49 @@
 		  </div>
 		</div>
 		<!-- Fin Modal -->
-<!-- Body Inicio -->
+		<!-- Body Inicio -->
 		<div class="container  body">
 			<div class="row">
 				<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 topPad">
 					<div class="publicacion">
 						<center>
 							<div class="pub-title-container">
-								<h1 class="ff-amaranth ft-upper">Localización de todas las fotos del episodio 1 de life is strange para móviles.</h1>
-								<h4 class="ff-poppins fs-small">Publicado el 05/02/18 | Autor: <a href="#">RaineB</a> | Categoría: <a href="analisis.html">Análisis</a></h4>
+								<h1 class="ff-amaranth ft-upper">Guia esencial para la Nintendo Switch</h1>
+								<h4 class="ff-poppins fs-small">Publicado el 03/02/18 | Autor: <a href="#">SatoNakada</a> | Categoría: <a href="analisis.html">Análisis</a>, <a href="switch.html">Switch</a></h4>
 							</div>
 						</center>
-						<img src="img/Noticia2.1.jpg" class="pub-img-container">
+						<img src="img/Diapositiva3.jpg" class="pub-img-container">
 						<div class="pub-container ff-poppins">
-							<p>Con nuestra guía podrás conocer la localización de todas las fotos en Life is Strange para móviles, una nueva versión del juego que llega a IOS y Android con una jugabilidad adaptada a estos dispositivos.</p>
-							<p>La obra cumbre de Dontnod también se ha adaptado a móviles tras su paso por consolas y ordenador, y lo hace con un Life is Strange para iOS y Android que no desmerece en absoluto respecto al juego original, y lo mejor de todo es que nos llega con una jugabilidad adaptada a lo táctil. En sí estamos ante el mismo Life is Strange que disfrutamos hace unos años, pero ahora en formato portátil, aunque igualmente divertido.</p>
-							<p>Uno de los principales retos a los que te enfrentarás es sobre la localización de todas las fotos en Life is Strange, teniendo hasta diez de ellas en cada uno de sus cinco capítulos. En la presente guía nos vamos a centrar en todas esas instantáneas que debemos crear y localizar en el primer capítulo de Life is Strange.</p>
-							<img src="img/Noticia2.2.jpg" class="pub-inner-img-container">
-							<p><b>Escuela (1 foto)</b></p>
-							<p>Después de la charla de clase al principio del juego, ve hacia el pupitre que tienes un poco más adelante e investiga las marcas de la mesa. Ahí tomarás una foto.</p>
+							<p>Con más de 10 millones de Switch vendidos en todo el mundo, Nintendo ya demostró que su consola híbrida es un éxito a nivel global. Sea por la versatilidad de poder jugar en formato móvil o en un televisor de alta definición, la consola incluso mantiene un ritmo de ventas mucho más acelerado que su predecesor el Wii U.</p>
+							<p>Si planeas adquirir o eres dueño de un Switch está guía básica te dirá cuáles son los títulos que no pueden faltar en tu colección para aprovechar la función de multijugador de la consola o jugar solo. </p>
 							<br>
-							<p><b>Campus (2 fotos)</b></p>
-							<p>En el campus encontrarás una estatua, cerca de la entrada. Observa la estatua hasta que te aparezca la opción de hacer la foto.</p>
-							<p>Ahora habla con los skaters que están frente la estatua y en concreto con Justin. Te tocará rebobinar y seleccionar The Flip para hacer la foto del skater en el suelo.</p>
+							<p><b>The Legend of Zelda: Breath of the Wild</b></p>
+							<img src="img/zelda.jpg" class="pub-inner-img-container">
+							<p>No solo es el mejor Zelda que Nintendo ha lanzado en los casi 30 años de la franquicia, es también ganador de Juego del Año de los Game of Awards 2017. Sin ninguna explicación, aviso o información alguna el jugador toma otra vez el control del famoso héroe Link, en un mundo completamente abierto y enorme para explorar a su gusto. Como cualquier otro juego de Zelda Breath of the Wild lleva al jugador a enfrentar enemigos para adquirir habilidades y armas especiales con la finalidad de derrotar a Ganon y salvar a Zelda. Pero a diferencia de otras entregas, en BoW los jugadores pasaran días y horas enteros explorando el vasto y hermoso universo del juego.</p>
+							<p>Para muchos dueños del Switch, BoW es la principal justificación de un su inversión.</p>
 							<br>
-							<p><b>Dormitorios (1 foto)</b></p>
-							<p>Corre al otro extremo, donde verás a Kate sentada mirando a los árboles. A la derecha del árbol más cercano verás una ardilla y una lata de cerveza y podrás tomar la foto.</p>
+							<p><b>Super Mario Odyssey</b></p>
+							<img src="img/odyssey.png" class="pub-inner-img-container">
+							<p>No se puede tener una consola de Nintendo, sin tener uno o varios juegos de Mario. Por suerte, para los dueños del Switch Super Mario Odyssey ha sido calificado como el mejor juego de la franquicia desde Mario Bros 64. El jugador toma control del famoso ex plomero italiano en un aventura más por salvar la princesa Peach de su archienemigo Bowser. Con la diferencia de que Mario ahora tendrá nuevas habilidades gracias a una gorra mágica conocida como Capi que le permitirá controlar personajes o transformarse en objetos. Además de combinar la experiencia de explorar mundo abiertos –uno de ellos inspirado en la cultura mexicana–, Super Mario Odyssey apela a la nostalgia de la saga con más de 30 años y permite a los jugadores interactuar en diversos escenarios que recrean mundos o escenas del clásico Super Mario Bros de 1985 en dos dimensiones y con música de 8 bits.</p>
 							<br>
-							<p><b>Dormitorio de chicas (2 fotos)</b></p>
-							<p>Ve al dormitorio de Max y mírate al espejo para hacer la foto.</p>
-							<p>Ahora debes leer la nota de la mesa, habla con Juliet en el pasillo, y ve finamente a la habitación de Victoria donde verás un collage de fotos sobre la pared. Ahora puedes hacer la foto.</p>
+							<p><b>Mario Kart 8 Deluxe</b></p>
+							<img src="img/mariokart.jpg" class="pub-inner-img-container">
+							<p>Nintendo tiene fama de tener consolas enfocadas al entretenimiento familiar y el Switch no es la excepción. Gracias a la versatilidad de sus controles, los Joy Con, la mayoría de los juegos del Switch se pueden jugar con al menos otra persona sin necesidad de tener que comprar un control adicional. El famoso juego de carreras Mario Kart 8 Deluxe es quizá el mejor juego para aprovechar esa función.</p>
+							<p>Aunque el juego es prácticamente el mismo que se lanzó en 2014 para el Wii U, la versión del Switch soporta gráficos Full HD y corre a 60 cuadros por segundo, cuando la consola está conectada en su base. Además, de personajes adicionales, un modo de batalla mejorado, el juego incluye todas las pistas de carreras de los contenidos descargables y ofrece soporta multijugador hasta para 8 jugadores en modo local y hasta 12 jugadores en en línea.</p>
 							<br>
-							<p><b>Dormitorios (exterior)</b></p>
-							<p>Cuando empieces esta parte te tocará rebobinar antes de que golpeen a Alyssa. Ahora corre, adviértela y toma una foto de la ventana hacia donde ha ido la bola.</p>
+							<p><b>Xenoblade Chronicles 2</b></p>
+							<img src="img/senoblade.jpg" class="pub-inner-img-container">
+							<p>Si se trata de aventuras largas, complejas y retadoras, Xenoblade Chronicles 2 es el juego perfecto para el nintendo Switch. XC2 es un juego de rol estilo japonés, similar a títulos como Final Fantasy, que ofrece más de 70 horas de juego combinado historía, exploración y misiones alternas.</p>
+							<p>El juego continua la historia del primer Xenoblade que fue lanzado para Nintendo Wii U y 3DS, situado en un planeta rodeado de continentes en las nubes soportados por titanes y un grupo de héroes en busca de la tierra prometida conocida como Elysium.</p>
+							<p>La saga ha ganado seguidores por su historia compleja pero con personajes simplones y humoristas, gráficos sobresalientes para una consola como el Switch y un soundtrack sinfónico al estilo de clásicos como Final Fantasy VII o Chrono Cross.</p>
 							<br>
-							<p><b>Aparcamientos (1 foto)</b></p>
-							<p>En la esquina del aparcamiento hay una caravana. Dibuja sobre la ventana y podrás hacer una foto.</p>
+							<p><b>Splatoon 2</b></p>
+							<img src="img/splatoon.jpg" class="pub-inner-img-container">
+							<p>Con más de cuatro millones de copias vendidas en todo el planeta, Splatoon 2 se ha convertido en una de las nuevas franquicias de éxito de Nintendo. El jugador toma el control de personajes conocidos como Inklings que utilizan pistolas con tintas de diferentes colores para atacar a sus oponentes, abrirse paso por los escenarios o resolver obstáculos. Aunque el juego tiene un modo de historia para un jugador, la saga de Splatoon ha ganada fama global por lo adictivo de su modo multijugador, en el que ocho jugadores en equipos de cuatro deben competir en batallas territoriales con el objetivo de ver qué equipo logra entintar la mayor cantidad del escenario con su color.</p>
+							<p>El juego ofrece diversos modos de competencia multijugador y permite la conexión de hasta ocho consolas, en modo local, o también a través de juego online. </p>
 							<div class="tag-container">
 								<h2 class="ff-amaranth ft-upper">Etiquetas:</h2>
-								<h5 class="ff-poppins"><a href="#">Móvil</a>, <a href="#">Life</a>, <a href="#">Strange</a></h5>
+								<h5 class="ff-poppins"><a href="#">mobil</a>, <a href="#">Ventas</a>, <a href="#">Populares</a></h5>
 								<div class="row rating-share ff-poppins">
 									<div class="col-lg-7 col-md-7 col-sm-8 col-xs-8">
 										Comparte en Redes Sociales:
@@ -253,11 +257,11 @@
 						<div class="author-container">
 							<div class="row">
 								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-									<img class="img-responsive" src="img/Profilepics/raineb.jpg">
+									<img class="img-responsive" src="img/Profilepics/satonakada.jpg">
 								</div>
 								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-									<h2 class="ff-amaranth ft-upper"><a href="#">RaineB</a></h2>
-									<p class="ff-poppins">Aficionada a los videojuegos y estudiante de computación, en mis tiempos libres me gusta leer noticias sobres consolas y videojuegos  nuevos además de escribir sobre estos para mostrarle a las demás personas lo interesante de los videojuegos.</p>
+									<h2 class="ff-amaranth ft-upper"><a href="#">SatoNakada</a></h2>
+									<p class="ff-poppins">Estudiante de Computación (UCV), aficionado de la programación competitiva, los retos,  deportes, y sobre todo, videojuegos de ritmo y música. Top player nacional en osu! STD. Mi meta es ser pro en DDR & PUMP IT UP</p>
 								</div>
 							</div>
 						</div>
@@ -267,25 +271,21 @@
 								<h1 class="ff-amaranth ft-upper" style="padding-bottom: 2%">Comentarios</h1>
 								<div class="comment-container">
 									<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-										<img class="img-responsive img-round" src="img/Profilepics/satonakada.jpg">
+										<img class="img-responsive img-round" src="img/Profilepics/carlosjj.jpg">
 									</div>
 									<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-										<h3 class="ff-amaranth"><a href="#">SatoNakada</a></h3>
-										<p class="ff-poppins">Excelente Juego!!!!! Lo acostumbro a jugar en mi tiempo libre y este post realmente me ha ayudado.</p>
+										<h3 class="ff-amaranth"><a href="#">Carlosjj</a></h3>
+										<p class="ff-poppins">RAIOZ!!!! se ve muy interesante esa consola, quisiera tener una!!!!!!.</p>
 										<hr>
 									</div>
 								</div>
 							</div>						
 						</div>
-						<form>
-							<div class="comment-form row">
-								<div class="col-lg-8 col-md-8 col-sm-10 col-xs-10 center-block">
-									<label for="comment" class="ff-amaranth fs-med">Escribe tu comentario:</label>
-		 							<textarea class="form-control" rows="5" id="comment"></textarea>
-		 							<button onclick="location.href = 'publicacion_auth.html';" type="button" class="btn contactoBoton ff-poppins center-block">Enviar Comentario</button>
-	 							</div>
-							</div>
-						</form>
+						<div class="row">
+							<div class="col-lg-4 col-md-4 col-sm-10 col-xs-10 center-block">
+				      			<button type="button" class="btn contactoBoton ff-poppins center-block" data-toggle="modal" data-target="#myModal2">Iniciar sesión para comentar</button>
+				      		</div>
+			      		</div>
 					</div>					
 				</div>
 				<!-- Fin publicación -->

@@ -5,7 +5,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://use.fontawesome.com/16e25eb0e0.js"></script>
-
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<!--fonts-->
 			<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
@@ -23,7 +22,7 @@
 	    <script type="text/javascript" src="./js/backend.js"></script>
 	    <script src="./js/bootstrap-rating-input.min.js" type="text/javascript"></script>
 	    <!--Función para rotar los carets en los dropdowns-->
-		<script>
+	    <script>
 		  $(function(){
 		    $(".dropdown").on("show.bs.dropdown hide.bs.dropdown", function(){
 		      $(this).find(".glyphicon-menu-down").toggleClass("caretup");
@@ -60,56 +59,22 @@
 					    </div>
 					    <div id="navbar" class="navbar-collapse collapse">
 						    <ul class="nav navbar-nav">
-						      <li><a class="barBoton resaltar" href="index_auth.html" id="inicio">Inicio</a></li>
-						      <li><a class="barBoton resaltar" href="analisis_auth.html" id="analisis">Análisis</a></li>
-						      <li><a class="barBoton resaltar" href="populares_auth.html" id="populares">Populares</a></li>
+						      <li><a class="barBoton resaltar" href="index.html" href="#" id="inicio">Inicio</a></li>
+						      <li><a class="barBoton resaltar" href="analisis.html" id="analisis">Análisis</a></li>
+						      <li><a class="barBoton resaltar" href="populares.html" id="populares">Populares</a></li>
 						      <li class="dropdown">
-						        <a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="consolas">Consolas &nbsp;<span class="glyphicon glyphicon-menu-down"></span></a>
+						        <a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="consolas">Consolas &nbsp;<span class="	glyphicon glyphicon-menu-down"></span></a>
 						        <ul class="dropdown-menu bar">
-						          <li><a class="sobre" href="ps4_auth.html">PS4</a></li>
-						          <li><a class="sobre" href="xbox_auth.html">XBOX ONE</a></li>
-						          <li><a class="sobre" href="switch_auth.html">NINTENDO SWITCH</a></li>
+						          <li><a class="sobre" href="ps4.html">PS4</a></li>
+						          <li><a class="sobre" href="xbox.html">XBOX ONE</a></li>
+						          <li><a class="sobre" href="switch.html">NINTENDO SWITCH</a></li>
 						        </ul>
 						      </li>
-						      <li><a class="barBoton resaltar" href="contacto_auth.html" id="contacto">Contacto</a></li>
+						      <li><a class="barBoton resaltar" href="contacto.html" id="contacto">Contacto</a></li>
 						    </ul>
 					        <ul class="nav navbar-nav navbar-right">
-					      	  <li class="dropdown inset">
-						        <a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="NombreUsario"><img src="img/Profilepics/raineb.jpg" class="userImage" alt="Avatar"> &nbsp; RAINEB &nbsp; <span class="	glyphicon glyphicon-menu-down"></span></a>
-						        <ul class="dropdown-menu bar perfilMenu">
-						        	<li>
-			                            <div class="navbar-login">
-			                                <div class="row">
-			                                    <div class="col-lg-12">
-			                                        <p class="text-center">
-			                                            <img src="img/Profilepics/raineb.jpg" class="userImage2" alt="Avatar">
-			                                        </p>
-			                                    </div>
-			                                    <div class="col-lg-12">
-			                                        <p class="text-left"><strong>Raquel Escalante</strong></p>
-			                                        <p class="text-left small">raquel@email.com</p>
-			                                        <p class="text-left">
-			                                            <a href="perfil.html" class="btn btn-primary btn-block btn-sm">Editar Perfil</a>
-			                                            <a href="admin_pub.html" class="btn btn-primary btn-block btn-sm">Mis Publicaciones</a>
-			                                        </p>
-			                                    </div>
-			                                </div>
-			                            </div>
-			                        </li>
-			                        <li class="divider"></li>
-			                        <li>
-			                            <div class="navbar-login navbar-login-session">
-			                                <div class="row">
-			                                    <div class="col-lg-12">
-			                                        <p>
-			                                            <a href="index.html" class="btn btn-danger btn-block">Cerrar Sesion</a>
-			                                        </p>
-			                                    </div>
-			                                </div>
-			                            </div>
-			                        </li>
-						        </ul>
-						      </li>
+					      	  <li><a class="barBoton right resaltar" href="#" data-toggle="modal" data-target="#myModal" id="registrar">Registrar</a></li>
+					      	  <li><a class="barBoton right resaltar" href="#" data-toggle="modal" data-target="#myModal2" id="inicioS">Iniciar Sesión</a></li>
 						    </ul>
 						</div>
 					  </div>
@@ -167,7 +132,7 @@
 		<div id="myModal2" class="modal fade ff-poppins" role="dialog">
 		  <div class="modal-dialog modal-sm">
 		    <!-- Modal content-->
-		    <div class="modal-content mod">
+		    <div id="inicio" class="modal-content mod">
 		      <div class="modal-header"  style="border: none; padding-top: 5%; padding-bottom: 1%;">
 		        <button type="button" class="close" data-dismiss="modal">&times;</button>
 		        <center><strong><h4 class="modal-title">Iniciar Sesión</h4></strong></center>
@@ -187,7 +152,42 @@
 		      <div class="modal-footer" style="border: none;">
 		      	<div class="row">
 		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		        		<center><button type="button" class="btn modalBoton" data-dismiss="modal">Iniciar Sesión</button></center>
+		        		<center><button onclick="location.href = 'publicacion_index_5_auth.html';" type="button" class="btn modalBoton" data-dismiss="modal">Iniciar Sesión</button></center>
+		      		</div>
+		      	</div>
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		      			<br>
+		        		<center><a data-toggle="modal" data-target="#myModal3" data-dismiss="modal">¿Olvido su Contraseña?</a></center>
+		      		</div>
+		      	</div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div id="myModal3" class="modal fade ff-poppins" role="dialog">
+		  <div class="modal-dialog modal-sm">
+		    <!-- Modal content-->
+		    <div id="recuperar" class="modal-content mod">
+		      <div class="modal-header"  style="border: none; padding-top: 5%; padding-bottom: 1%;">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <center><strong><h4 class="modal-title">Enviar Contraseña</h4></strong></center>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		      			<input type="email" name="email" placeholder="Correo">
+		      		</div>
+		      	</div>
+		      </div>
+		      <div class="modal-footer" style="border: none;">
+		      	<div class="row">
+		      		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+		        		<center><button type="button"  data-toggle="modal" data-target="#myModal2" class="btn modalBoton" data-dismiss="modal">Volver</button></center>
+		      		</div>
+		      		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+		        		<center><button type="button" class="btn modalBoton" data-dismiss="modal">Enviar</button></center>
 		      		</div>
 		      	</div>
 		      </div>
@@ -196,45 +196,52 @@
 		  </div>
 		</div>
 		<!-- Fin Modal -->
-<!-- Body Inicio -->
+		<!-- Body Inicio -->
 		<div class="container  body">
 			<div class="row">
 				<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 topPad">
 					<div class="publicacion">
 						<center>
 							<div class="pub-title-container">
-								<h1 class="ff-amaranth ft-upper">Localización de todas las fotos del episodio 1 de life is strange para móviles.</h1>
-								<h4 class="ff-poppins fs-small">Publicado el 05/02/18 | Autor: <a href="#">RaineB</a> | Categoría: <a href="analisis.html">Análisis</a></h4>
+								<h1 class="ff-amaranth ft-upper">Los mejores juegos para celulares del 2017</h1>
+								<h4 class="ff-poppins fs-small">Publicado el 10/01/17 | Autor: <a href="#">Carlosjj</a> | Categoría: <a href="analisis.html">Análisis</a></h4>
 							</div>
 						</center>
-						<img src="img/Noticia2.1.jpg" class="pub-img-container">
+						<img src="img/Diapositiva2.2.jpg" class="pub-img-container">
 						<div class="pub-container ff-poppins">
-							<p>Con nuestra guía podrás conocer la localización de todas las fotos en Life is Strange para móviles, una nueva versión del juego que llega a IOS y Android con una jugabilidad adaptada a estos dispositivos.</p>
-							<p>La obra cumbre de Dontnod también se ha adaptado a móviles tras su paso por consolas y ordenador, y lo hace con un Life is Strange para iOS y Android que no desmerece en absoluto respecto al juego original, y lo mejor de todo es que nos llega con una jugabilidad adaptada a lo táctil. En sí estamos ante el mismo Life is Strange que disfrutamos hace unos años, pero ahora en formato portátil, aunque igualmente divertido.</p>
-							<p>Uno de los principales retos a los que te enfrentarás es sobre la localización de todas las fotos en Life is Strange, teniendo hasta diez de ellas en cada uno de sus cinco capítulos. En la presente guía nos vamos a centrar en todas esas instantáneas que debemos crear y localizar en el primer capítulo de Life is Strange.</p>
-							<img src="img/Noticia2.2.jpg" class="pub-inner-img-container">
-							<p><b>Escuela (1 foto)</b></p>
-							<p>Después de la charla de clase al principio del juego, ve hacia el pupitre que tienes un poco más adelante e investiga las marcas de la mesa. Ahí tomarás una foto.</p>
+							<p>Los videojuegos no son exclusivos de las consolas y por eso repasamos los 20 mejores juegos del momento que podemos disfrutar en nuestros móviles o tabletas Android.</p>
+							<p>La cantidad de títulos que hay en Google Play es inmensa, abrumadora. Está claro que en la tienda de Google prima la cantidad a la calidad, sin embargo, existen un gran número de buenos juegos Android con los que disfrutar de horas y horas de diversión.</p>
+							<p>Y es que, desde hace algunos años los videojuegos ya no son exclusivos de las consolas y ahora podemos disfrutar de buenos y divertidos títulos en nuestros dispositivos Android.</p>
+							<p>Mucho son ports de las propias consolas y otros han nacido directamente para nuestros móviles o tabletas, pero lo que no falta es la gran variedad de géneros: aventura, estrategia, baile… Repasamos los mejores juegos de Android del momento.  Cargad vuestras baterías, el juego comienza...</p>
 							<br>
-							<p><b>Campus (2 fotos)</b></p>
-							<p>En el campus encontrarás una estatua, cerca de la entrada. Observa la estatua hasta que te aparezca la opción de hacer la foto.</p>
-							<p>Ahora habla con los skaters que están frente la estatua y en concreto con Justin. Te tocará rebobinar y seleccionar The Flip para hacer la foto del skater en el suelo.</p>
+							<p><b>Batman: The Telltale Series:</b></p>
+							<img src="img/batman.jpg" class="pub-inner-img-container">
+							<p>Desarrollado por Telltale Games, Batman: The Telltale Series es una aventura gráfica compuesta por cinco episodios en la que el estudio californiano nos narra la doble vida de Bruce Wayne: empresario de día y Caballero Oscuro de noche.</p>
+							<p>La aventura se ambienta justo en los momentos previos de la elección de Harvey Dent como Alcalde de Gotham. Una historia profunda, llena de quick time events y más acción de lo esperado en la que hacen aparición personajes tan conocidos como Catwoman, Alfred, James Gordon, Oswald Cobblepot o Lucius Fox.</p>
 							<br>
-							<p><b>Dormitorios (1 foto)</b></p>
-							<p>Corre al otro extremo, donde verás a Kate sentada mirando a los árboles. A la derecha del árbol más cercano verás una ardilla y una lata de cerveza y podrás tomar la foto.</p>
+							<p><b>Clash Royale:</b></p>
+							<img src="img/clash.jpg" class="pub-inner-img-container">
+							<p>Basado en el universo de Clash of Clanes, Clash Royale es el juego que ha osado desafiar al poderoso Pokémon Go como uno de los juegos moviles más destacados.</p>
+							<p>El juego de estrategia ha logrado conquistar a grandes y pequeños hasta batir récords de descargas. Clash Royale es un título multijugador en tiempo real con algunos elementos de pago.</p>
+							<p>Mezcla entre ajedrez, cartas Magic y Age of Empires, tenemos que mejorar cartas de nuestras tropas, hechizos y defensas. ¿Conseguirás destruir las torres y lograr la gloria en la arena?</p>
 							<br>
-							<p><b>Dormitorio de chicas (2 fotos)</b></p>
-							<p>Ve al dormitorio de Max y mírate al espejo para hacer la foto.</p>
-							<p>Ahora debes leer la nota de la mesa, habla con Juliet en el pasillo, y ve finamente a la habitación de Victoria donde verás un collage de fotos sobre la pared. Ahora puedes hacer la foto.</p>
+							<p><b>DC Legends:</b></p>
+							<img src="img/dc.jpg" class="pub-inner-img-container">
+							<p>Los héroes de DC están más de moda que nunca en el cine con La Liga de la Justicia o Wonder Woman, pero también en nuestras consolas. En los smartphones y tabletas con sistema operativo Android podemos disfrutar con DC Legends, un mega-crossover con los héroes y villanos de DC como protagonistas.</p>
+							<p>Entre ellos nos encontramos a Superman, Wonder Woman, Joker, Doomsday o Solomon Grundy. Para los despistados, DC Legends es un free-to-play que mezcla rol y estrategia. De ti depende liderar un equipo hacia la victoria y conviértete en una leyenda.</p>
 							<br>
-							<p><b>Dormitorios (exterior)</b></p>
-							<p>Cuando empieces esta parte te tocará rebobinar antes de que golpeen a Alyssa. Ahora corre, adviértela y toma una foto de la ventana hacia donde ha ido la bola.</p>
+							<p><b>Monument Valley 2:</b></p>
+							<img src="img/monument.jpg" class="pub-inner-img-container">
+							<p>Secuela del popular y premiado juego de ustwo games. Una aventura repleta de puzzles y con un apartado gráfico bello, capaz de aislarte en esta fantasía inolvidable y llena de color.</p>
+							<p>Esta entrega se conoce a sí misma y tiene claro sus objetivos, convirtiéndola en un título sin pretensiones y cautivante a la vez. La historia del viaje de una madre y su hija se vuelve una fantasía muy especial por la calidez en el buen diseño de los escenarios y puzzles que tendremos que superar. Todos estos detalles logran una sinergia que da como resultado que este videojuego para smartphone se posicione en el primer lugar.</p>
 							<br>
-							<p><b>Aparcamientos (1 foto)</b></p>
-							<p>En la esquina del aparcamiento hay una caravana. Dibuja sobre la ventana y podrás hacer una foto.</p>
+							<p><b>Beholder:</b></p>
+							<img src="img/beholder.jpg" class="pub-inner-img-container">
+							<p>Sé parte de un universo orwelliano y conviértete en el vigilante y omnipresente Gran Hermano. Espía a tus vecinos y busca pruebas para incriminarlos, o descubre la manera de salvarlos. Tú decides si apoyar al gobierno autoritario o burlar el sistema.</p>
+							<p>Beholder es otro gran título adaptado de PC a smartphones. El videojuego te sitúa en un país distópico donde el gobierno autoritario de turno abusa de su poder y mantiene todo bajo control con la explotación de sus ciudadanos y la corrupción de sus funcionarios. Este régimen te contrata/obliga a ser su espía para apoyar a este sistema. La fuerte propuesta de este título es la toma de decisiones y cómo cambia la historia tras los desenlaces de estas. Hay un tema moral constante en cada sub trama que desarrolla y la tensión es perenne, a tal punto que te hace replantear tu actuar en cada situación. En esta historia, nada es blanco o negro. Recomendado.</p>
 							<div class="tag-container">
 								<h2 class="ff-amaranth ft-upper">Etiquetas:</h2>
-								<h5 class="ff-poppins"><a href="#">Móvil</a>, <a href="#">Life</a>, <a href="#">Strange</a></h5>
+								<h5 class="ff-poppins"><a href="#">mobil</a>, <a href="#">Ventas</a>, <a href="#">Populares</a></h5>
 								<div class="row rating-share ff-poppins">
 									<div class="col-lg-7 col-md-7 col-sm-8 col-xs-8">
 										Comparte en Redes Sociales:
@@ -253,11 +260,11 @@
 						<div class="author-container">
 							<div class="row">
 								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-									<img class="img-responsive" src="img/Profilepics/raineb.jpg">
+									<img class="img-responsive" src="img/Profilepics/carlosjj.jpg">
 								</div>
 								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-									<h2 class="ff-amaranth ft-upper"><a href="#">RaineB</a></h2>
-									<p class="ff-poppins">Aficionada a los videojuegos y estudiante de computación, en mis tiempos libres me gusta leer noticias sobres consolas y videojuegos  nuevos además de escribir sobre estos para mostrarle a las demás personas lo interesante de los videojuegos.</p>
+									<h2 class="ff-amaranth ft-upper"><a href="#">Carlosjj</a></h2>
+									<p class="ff-poppins">Amante de los videojuegos y fan de playstation. Amo jugar tomb raider y uncharted cuando no estoy escribiendo en el blog o estudiando computación. Considero que los teléfonos móviles también sirven para jugar aunque solo eventualmente. </p>
 								</div>
 							</div>
 						</div>
@@ -265,27 +272,18 @@
 						<div class="pub-comment-container">
 							<div class="row">
 								<h1 class="ff-amaranth ft-upper" style="padding-bottom: 2%">Comentarios</h1>
-								<div class="comment-container">
-									<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-										<img class="img-responsive img-round" src="img/Profilepics/satonakada.jpg">
-									</div>
-									<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-										<h3 class="ff-amaranth"><a href="#">SatoNakada</a></h3>
-										<p class="ff-poppins">Excelente Juego!!!!! Lo acostumbro a jugar en mi tiempo libre y este post realmente me ha ayudado.</p>
-										<hr>
-									</div>
-								</div>
+									<div class="comment-container">
+										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+											<h3>Nadie ha comentado esta publicación</h3>
+										</div>
+									</div> 
 							</div>						
 						</div>
-						<form>
-							<div class="comment-form row">
-								<div class="col-lg-8 col-md-8 col-sm-10 col-xs-10 center-block">
-									<label for="comment" class="ff-amaranth fs-med">Escribe tu comentario:</label>
-		 							<textarea class="form-control" rows="5" id="comment"></textarea>
-		 							<button onclick="location.href = 'publicacion_auth.html';" type="button" class="btn contactoBoton ff-poppins center-block">Enviar Comentario</button>
-	 							</div>
-							</div>
-						</form>
+						<div class="row">
+							<div class="col-lg-4 col-md-4 col-sm-10 col-xs-10 center-block">
+				      			<button type="button" class="btn contactoBoton ff-poppins center-block" data-toggle="modal" data-target="#myModal2">Iniciar sesión para comentar</button>
+				      		</div>
+			      		</div>
 					</div>					
 				</div>
 				<!-- Fin publicación -->
