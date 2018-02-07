@@ -58,25 +58,59 @@
 					      <a class="navbar-brand barBoton" href="index.html">PowerPlay</a>
 					    </div>
 					    <div id="navbar" class="navbar-collapse collapse">
-						    <ul class="nav navbar-nav">
-						      <li><a class="barBoton resaltar" href="index.html" href="#" id="inicio">Inicio</a></li>
-						      <li><a class="barBoton resaltar" href="analisis.html" id="analisis">Análisis</a></li>
-						      <li><a class="barBoton resaltar" href="populares.html" id="populares">Populares</a></li>
-						      <li class="dropdown">
-						        <a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="consolas">Consolas &nbsp;<span class="	glyphicon glyphicon-menu-down"></span></a>
-						        <ul class="dropdown-menu bar">
-						          <li><a class="sobre" href="ps4.html">PS4</a></li>
-						          <li><a class="sobre" href="xbox.html">XBOX ONE</a></li>
-						          <li><a class="sobre" href="switch.html">NINTENDO SWITCH</a></li>
-						        </ul>
-						      </li>
-						      <li><a class="barBoton resaltar" href="contacto.html" id="contacto">Contacto</a></li>
-						    </ul>
-					        <ul class="nav navbar-nav navbar-right">
-					      	  <li><a class="barBoton right resaltar" href="#" data-toggle="modal" data-target="#myModal" id="registrar">Registrar</a></li>
-					      	  <li><a class="barBoton right resaltar" href="#" data-toggle="modal" data-target="#myModal2" id="inicioS">Iniciar Sesión</a></li>
-						    </ul>
-						</div>
+									<ul class="nav navbar-nav">
+										<li><a class="barBoton resaltar" href="index_auth.html" id="inicio">Inicio</a></li>
+										<li><a class="barBoton resaltar" href="analisis_auth.html" id="analisis">Análisis</a></li>
+										<li><a class="barBoton resaltar" href="populares_auth.html" id="populares">Populares</a></li>
+										<li class="active barBoton resaltar dropdown">
+											<a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="consolas">Consolas &nbsp;<span class="glyphicon glyphicon-menu-down"></span></a>
+											<ul class="dropdown-menu bar">
+												<li class="activo"><a class="sobre" href="#">PS4</a></li>
+												<li><a class="sobre" href="xbox_auth.html">XBOX ONE</a></li>
+												<li><a class="sobre" href="switch_auth.html">NINTENDO SWITCH</a></li>
+											</ul>
+										</li>
+										<li><a class="barBoton resaltar" href="contacto_auth.html" id="contacto">Contacto</a></li>
+									</ul>
+										<ul class="nav navbar-nav navbar-right">
+											<li class="dropdown inset">
+											<a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="NombreUsario"><img src="img/Profilepics/raineb.jpg" class="userImage" alt="Avatar"> &nbsp; RAINEB &nbsp; <span class="	glyphicon glyphicon-menu-down"></span></a>
+											<ul class="dropdown-menu bar perfilMenu">
+												<li>
+																		<div class="navbar-login">
+																				<div class="row">
+																						<div class="col-lg-12">
+																								<p class="text-center">
+																										<img src="img/Profilepics/raineb.jpg" class="userImage2" alt="Avatar">
+																								</p>
+																						</div>
+																						<div class="col-lg-12">
+																								<p class="text-left"><strong>Raquel Escalante</strong></p>
+																								<p class="text-left small">raquel@email.com</p>
+																								<p class="text-left">
+																										<a href="perfil.html" class="btn btn-primary btn-block btn-sm">Editar Perfil</a>
+																										<a href="admin_pub.html" class="btn btn-primary btn-block btn-sm">Mis Publicaciones</a>
+																								</p>
+																						</div>
+																				</div>
+																		</div>
+																</li>
+																<li class="divider"></li>
+																<li>
+																		<div class="navbar-login navbar-login-session">
+																				<div class="row">
+																						<div class="col-lg-12">
+																								<p>
+																										<a href="post_ps4_TLOU.html" class="btn btn-danger btn-block">Cerrar Sesion</a>
+																								</p>
+																						</div>
+																				</div>
+																		</div>
+																</li>
+											</ul>
+										</li>
+									</ul>
+							</div>
 					  </div>
 					</nav>
 				</div>	
@@ -152,7 +186,7 @@
 		      <div class="modal-footer" style="border: none;">
 		      	<div class="row">
 		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		        		<center><button onclick="location.href = 'post_xbox_auth.html';" type="button" class="btn modalBoton" data-dismiss="modal">Iniciar Sesión</button></center>
+		        		<center><button onclick="location.href = 'publicacion_auth.html';" type="button" class="btn modalBoton" data-dismiss="modal">Iniciar Sesión</button></center>
 		      		</div>
 		      	</div>
 		      	<div class="row">
@@ -203,21 +237,20 @@
 					<div class="publicacion">
 						<center>
 							<div class="pub-title-container">
-								<h1 class="ff-amaranth ft-upper">Xbox One X aumentó los ingresos de la división de gaming de Microsoft</h1>
-								<h4 class="ff-poppins fs-small">Publicado el 01/02/18 | Autor: <a href="#">raineb</a> | Categoría: <a href="analisis.html">Análisis</a>, <a href="xbox.html">XBOX</a></h4>
+								<h1 class="ff-amaranth ft-upper">The Last Of Us Parte 2: esto es lo que sabemos por ahora</h1>
+								<h4 class="ff-poppins fs-small">Publicado el 06/02/18 | Autor: <a href="#">Pedrito</a> | Categoría: <a href="analisis.html">Análisis</a>, <a href="ps4.html">PS4</a></h4>
 							</div>
 						</center>
-						<img src="img/xbox.jpg" class="pub-img-container">
+						<img src="img/the-last-of-us-2-voice-cast-revealed_y481.jpg" class="pub-img-container">
 						<div class="pub-container ff-poppins">
-							<h4>Microsoft presentó su reporte financiero correspondiente al más reciente trimestre fiscal. En él, la compañía reveló que el lanzamiento del Xbox One X le ayudó a que los ingresos de su división de gaming presentara un crecimiento anual.</h4>
-							<p>De acuerdo con Microsoft, su división de gaming presentó un crecimiento anual de 8%. Esto fue gracias a que, durante los últimos meses de 2017, la venta de hardware de Xbox aumentó 14% gracias al lanzamiento de Xbox One X. Es importante señalar que, fiel a su tradición, Microsoft no reveló la cantidad de unidades que han vendido sus consolas.</p>
-							<p>Por otro lado, la compañía también informó que la venta de software y servicios relacionados con Xbox creció 4%. Si bien es un crecimiento menor al del año pasado, esto se debe a que su única exclusiva fue Forza Motorsport 7, mientras que 2016 su alineación de fin de año consistió de Forza Horizon 3 y Gears of War 4.</p>
-							<img src="img/xbox1.png" class="pub-inner-img-container">
-							<p>Más adelante, Microsoft confirmó que la cantidad de usuarios activos mensuales de Xbox LIVE presentó un crecimiento de 7% en comparación al mismo periodo del año pasado. Gracias a esto, la plataforma online de Microsoft cuenta con 59 millones de usuarios activos al mes. Es importante señalar que esto tiene en cuenta a todos los usuarios de Xbox LIVE en Xbox One, Xbox 360 y PC y no sólo a aquellos que pagan su membresía Gold.</p>
-							<p>Con todo lo anterior, esta división de Microsoft presentó ingresos de $3.92 MMDD. Para poner las cosas en perspectiva, te contamos que, en el trimestre fiscal anterior, los ingresos de Xbox fueron de $1.8 MMDD.</p>
+							<p>The Last Of Us Part 2, como ahora sabemos que se llama, se confirma, gracias al tráiler, para seguir la historia de Joel y Ellie. Claramente retoma algunos años más tarde, ya que Ellie se ha convertido en una mujer joven. No vemos mucho en el camino de detalles específicos en el tráiler, solo personas muertas, y Ellie tocando una canción triste en la guitarra. Además, Ellie está enojada.</p>
+							<p>Neil Druckman, quien repetirá su papel como escritor principal de The Last of Us Part 2, ha confirmado que el odio jugará un papel clave en el nuevo juego. Es un cambio apropiado teniendo en cuenta que el amor, la sensación que Joel finalmente siente por Ellie, es el tema principal del primer juego. Está claro que mucho ha sucedido fuera de la pantalla desde que terminó el primer juego. Exactamente lo que ha enojado tanto a Ellie no está claro, pero aparentemente quiere mucha gente muerta y según el número de cadáveres que vemos en el tráiler, ella es capaz de hacer que todo suceda.</p>
+							<img src="img/TLOU.jpg" class="pub-inner-img-container">
+							<h3>¿Cuando saldrá a la venta?</h3>
+							<p>Se informó que una de las razones por las que el desarrollo de The Last Of Us 2 demoró tanto tiempo se debe a que era necesario centrarse en el DLC de Uncharted 4. Ahora que ya está hecho, creemos que la mayor parte del estudio esfuerzo es ahora en este juego. Habiendo dicho eso, si recién se pusieron en marcha todavía podría pasar bastante tiempo antes de que finalmente llegue el juego. Naughty Dog es una bestia cuando se trata de crear juegos asombrosos en un corto período de tiempo, sobre todo porque la gente es totalmente leal a la compañía y sus juegos, que incluyen The Last Of Us, Uncharted y Crash Bandicoot. Como el trailer de The Last of Us Part 2 ni siquiera menciona un año para su lanzamiento, supondríamos que la producción es tan temprana que Naughty Dog no sabe cuándo se lanzará el juego. Es posible que tengan que hacer un trabajo significativamente mayor incluso antes de que tengan la capacidad de medir cuándo llegarán al final. Si el juego se esperaba en 2017, probablemente lo hubiéramos escuchado, por lo que probablemente sea más probable una fecha en 2018 o 2019.</p>
 							<div class="tag-container">
 								<h2 class="ff-amaranth ft-upper">Etiquetas:</h2>
-								<h5 class="ff-poppins"><a href="#">Xbox One</a>, <a href="#">Xbox</a>, <a href="#">Microsoft</a></h5>
+								<h5 class="ff-poppins"><a href="#">The Last Of Us</a>, <a href="#">PS4</a>, <a href="#">Zombies</a>, <a href="#">Post-Apocalipsis</a></h5>
 								<div class="row rating-share ff-poppins">
 									<div class="col-lg-7 col-md-7 col-sm-8 col-xs-8">
 										Comparte en Redes Sociales:
@@ -236,11 +269,13 @@
 						<div class="author-container">
 							<div class="row">
 								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-									<img class="img-responsive" src="img/Profilepics/raineb.jpg">
+									<img class="img-responsive" src="img/Profilepics/pedrito.png">
 								</div>
 								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-									<h2 class="ff-amaranth ft-upper"><a href="#">raineb</a></h2>
-									<p class="ff-poppins">Aficionada a los videojuegos y estudiante de computación, en mis tiempos libres me gusta leer noticias sobres consolas y videojuegos  nuevos además de escribir sobre estos para mostrarle a las demás personas lo interesante de los videojuegos.										</p>
+									<h2 class="ff-amaranth ft-upper"><a href="#">Pedrito</a></h2>
+									<p class="ff-poppins">Al ser computista, te encuentras inmerso en este gran mundo 
+									al cual lentamente te das cuenta que no puedes salir, los videojuegos; son mi vida y
+									mi pasión. Por lo tanto, trato mantenerlos al día con las últimas novedades de los videojuegos.</p>
 								</div>
 							</div>
 						</div>
@@ -250,35 +285,35 @@
 								<h1 class="ff-amaranth ft-upper" style="padding-bottom: 2%">Comentarios</h1>
 								<div class="comment-container">
 										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-											<img class="img-responsive img-round" src="img/Profilepics/satonakada.jpg">
+											<img class="img-responsive img-round" src="img/Profilepics/carlosjj.jpg">
 										</div>
 										<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-											<h3 class="ff-amaranth"><a href="#">SatoNakada</a></h3>
-											<p class="ff-poppins">Wow, no lo sabía</p>
+											<h3 class="ff-amaranth"><a href="#">Carlosjj</a></h3>
+											<p class="ff-poppins">Los zombies son lo mejor</p>
 											<hr>
 										</div>
 									</div> 
 								<div class="comment-container">
 										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-											<img class="img-responsive img-round" src="img/Profilepics/pedrito.png">
+											<img class="img-responsive img-round" src="img/Profilepics/raineb.jpg">
 										</div>
 										<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-											<h3 class="ff-amaranth"><a href="#">Pedrito</a></h3>
-											<p class="ff-poppins">Xbox me gusta mucho</p>
+											<h3 class="ff-amaranth"><a href="#">Raineb</a></h3>
+											<p class="ff-poppins">Me encanto el final de The Last of Us</p>
 											<hr>
 										</div>
 									</div>
+									
 									<div class="comment-container">
 										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-											<img class="img-responsive img-round" src="img/Profilepics/carlosjj.jpg">
+											<img class="img-responsive img-round" src="img/Profilepics/satonakada.jpg">
 										</div>
 										<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-											<h3 class="ff-amaranth"><a href="#">Carlosjj</a></h3>
-											<p class="ff-poppins">Fascinante</p>
+											<h3 class="ff-amaranth"><a href="#">SatoNakada</a></h3>
+											<p class="ff-poppins">¡Si! Misma historia, nuevo juego</p>
 											<hr>
 										</div>
 									</div> 
-									
 							</div>						
 						</div>
 						<div class="row">

@@ -17,7 +17,9 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="./css/estilo.css" rel="stylesheet" type="text/css" media="screen" />
-	    <script type="text/javascript" src="./js/backend_auth.js"></script>
+	    <script type="text/javascript" src="./js/datos.json"></script>
+	    <script type="text/javascript" src="./js/config.json"></script>
+	    <script type="text/javascript" src="./js/backend.js"></script>
 	    <!--Función para rotar los carets en los dropdowns-->
 	    <script>
 		  $(function(){
@@ -55,59 +57,59 @@
 					      <a class="navbar-brand barBoton" href="index.html">PowerPlay</a>
 					    </div>
 					    <div id="navbar" class="navbar-collapse collapse">
-						    <ul class="nav navbar-nav">
-						      <li><a class="barBoton resaltar" href="index_auth.html" id="inicio">Inicio</a></li>
-						      <li><a class="barBoton resaltar" href="analisis_auth.html" id="analisis">Análisis</a></li>
-						      <li><a class="barBoton resaltar" href="populares_auth.html" id="populares">Populares</a></li>
-						      <li class="active barBoton resaltar dropdown">
-						        <a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="consolas">Consolas &nbsp;<span class="glyphicon glyphicon-menu-down"></span></a>
-						        <ul class="dropdown-menu bar">
-						          <li class="activo"><a class="sobre" href="#">PS4</a></li>
-						          <li><a class="sobre" href="xbox_auth.html">XBOX ONE</a></li>
-						          <li><a class="sobre" href="switch_auth.html">NINTENDO SWITCH</a></li>
-						        </ul>
-						      </li>
-						      <li><a class="barBoton resaltar" href="contacto_auth.html" id="contacto">Contacto</a></li>
-						    </ul>
-					        <ul class="nav navbar-nav navbar-right">
-					      	  <li class="dropdown inset">
-						        <a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="NombreUsario"><img src="img/Profilepics/raineb.jpg" class="userImage" alt="Avatar"> &nbsp; RAINEB &nbsp; <span class="	glyphicon glyphicon-menu-down"></span></a>
-						        <ul class="dropdown-menu bar perfilMenu">
-						        	<li>
-			                            <div class="navbar-login">
-			                                <div class="row">
-			                                    <div class="col-lg-12">
-			                                        <p class="text-center">
-			                                            <img src="img/Profilepics/raineb.jpg" class="userImage2" alt="Avatar">
-			                                        </p>
-			                                    </div>
-			                                    <div class="col-lg-12">
-			                                        <p class="text-left"><strong>Raquel Escalante</strong></p>
-			                                        <p class="text-left small">raquel@email.com</p>
-			                                        <p class="text-left">
-			                                            <a href="perfil.html" class="btn btn-primary btn-block btn-sm">Editar Perfil</a>
-			                                            <a href="admin_pub.html" class="btn btn-primary btn-block btn-sm">Mis Publicaciones</a>
-			                                        </p>
-			                                    </div>
-			                                </div>
-			                            </div>
-			                        </li>
-			                        <li class="divider"></li>
-			                        <li>
-			                            <div class="navbar-login navbar-login-session">
-			                                <div class="row">
-			                                    <div class="col-lg-12">
-			                                        <p>
-			                                            <a href="ps4.html" class="btn btn-danger btn-block">Cerrar Sesion</a>
-			                                        </p>
-			                                    </div>
-			                                </div>
-			                            </div>
-			                        </li>
-						        </ul>
-						      </li>
-						    </ul>
-						</div>
+									<ul class="nav navbar-nav">
+										<li><a class="barBoton resaltar" href="index_auth.html" id="inicio">Inicio</a></li>
+										<li><a class="barBoton resaltar" href="analisis_auth.html" id="analisis">Análisis</a></li>
+										<li><a class="barBoton resaltar" href="populares_auth.html" id="populares">Populares</a></li>
+										<li class="active barBoton resaltar dropdown">
+											<a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="consolas">Consolas &nbsp;<span class="glyphicon glyphicon-menu-down"></span></a>
+											<ul class="dropdown-menu bar">
+												<li class="activo"><a class="sobre" href="#">PS4</a></li>
+												<li><a class="sobre" href="xbox_auth.html">XBOX ONE</a></li>
+												<li><a class="sobre" href="switch_auth.html">NINTENDO SWITCH</a></li>
+											</ul>
+										</li>
+										<li><a class="barBoton resaltar" href="contacto_auth.html" id="contacto">Contacto</a></li>
+									</ul>
+										<ul class="nav navbar-nav navbar-right">
+											<li class="dropdown inset">
+											<a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="NombreUsario"><img src="img/Profilepics/raineb.jpg" class="userImage" alt="Avatar"> &nbsp; RAINEB &nbsp; <span class="	glyphicon glyphicon-menu-down"></span></a>
+											<ul class="dropdown-menu bar perfilMenu">
+												<li>
+																		<div class="navbar-login">
+																				<div class="row">
+																						<div class="col-lg-12">
+																								<p class="text-center">
+																										<img src="img/Profilepics/raineb.jpg" class="userImage2" alt="Avatar">
+																								</p>
+																						</div>
+																						<div class="col-lg-12">
+																								<p class="text-left"><strong>Raquel Escalante</strong></p>
+																								<p class="text-left small">raquel@email.com</p>
+																								<p class="text-left">
+																										<a href="perfil.html" class="btn btn-primary btn-block btn-sm">Editar Perfil</a>
+																										<a href="admin_pub.html" class="btn btn-primary btn-block btn-sm">Mis Publicaciones</a>
+																								</p>
+																						</div>
+																				</div>
+																		</div>
+																</li>
+																<li class="divider"></li>
+																<li>
+																		<div class="navbar-login navbar-login-session">
+																				<div class="row">
+																						<div class="col-lg-12">
+																								<p>
+																										<a href="ps4.html" class="btn btn-danger btn-block">Cerrar Sesion</a>
+																								</p>
+																						</div>
+																				</div>
+																		</div>
+																</li>
+											</ul>
+										</li>
+									</ul>
+							</div>
 					  </div>
 					</nav>
 				</div>	
@@ -163,7 +165,7 @@
 		<div id="myModal2" class="modal fade ff-poppins" role="dialog">
 		  <div class="modal-dialog modal-sm">
 		    <!-- Modal content-->
-		    <div class="modal-content mod">
+		    <div id="inicio" class="modal-content mod">
 		      <div class="modal-header"  style="border: none; padding-top: 5%; padding-bottom: 1%;">
 		        <button type="button" class="close" data-dismiss="modal">&times;</button>
 		        <center><strong><h4 class="modal-title">Iniciar Sesión</h4></strong></center>
@@ -183,7 +185,42 @@
 		      <div class="modal-footer" style="border: none;">
 		      	<div class="row">
 		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		        		<center><button type="button" onclick="location.href = 'ps4_auth.html';" class="btn modalBoton" data-dismiss="modal">Iniciar Sesión</button></center>
+		        		<center><button onclick="location.href = 'ps4_auth.html';" type="button" class="btn modalBoton" data-dismiss="modal">Iniciar Sesión</button></center>
+		      		</div>
+		      	</div>
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		      			<br>
+		        		<center><a data-toggle="modal" data-target="#myModal3" data-dismiss="modal">¿Olvido su Contraseña?</a></center>
+		      		</div>
+		      	</div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div id="myModal3" class="modal fade ff-poppins" role="dialog">
+		  <div class="modal-dialog modal-sm">
+		    <!-- Modal content-->
+		    <div id="recuperar" class="modal-content mod">
+		      <div class="modal-header"  style="border: none; padding-top: 5%; padding-bottom: 1%;">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <center><strong><h4 class="modal-title">Enviar Contraseña</h4></strong></center>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		      			<input type="email" name="email" placeholder="Correo">
+		      		</div>
+		      	</div>
+		      </div>
+		      <div class="modal-footer" style="border: none;">
+		      	<div class="row">
+		      		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+		        		<center><button type="button"  data-toggle="modal" data-target="#myModal2" class="btn modalBoton" data-dismiss="modal">Volver</button></center>
+		      		</div>
+		      		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+		        		<center><button type="button" class="btn modalBoton" data-dismiss="modal">Enviar</button></center>
 		      		</div>
 		      	</div>
 		      </div>
@@ -199,7 +236,7 @@
 				<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 topPad">
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<center> <h1 class="ff-amaranth"> PS4 </h1></center>
+							<center> <h1 class="ff-amaranth"> PLAY STATION 4 </h1></center>
 							<br>
 						</div>
 					</div>
@@ -208,16 +245,16 @@
 						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 							<div class="row">
 								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<div class="grid">
+									<div class="grid" id="auth_ps4_TLOU">
 										<div class="row">
 											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-												<img id="banner" src="./img/Noticia1.jpg">
+												<img id="banner" src="./img/the-last-of-us-part-2-screen-05-ps4-eu-05dec16.jpg">
 											</div>
 										</div>
 										<div class="row">
 											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noticias">
-												<h3 class="ff-amaranth">Estos son los juegos publicados para Dreamcast en 2017</h3>
-												<p class="ff-poppins">¿Sabías que siguen publicándose videojuegos en plataformas retro? Vamos a repasar los juegos que se han publicado en Dreamcast este 2017 que finaliza</p>
+												<h3 class="ff-amaranth">The Last Of Us Parte 2: esto es lo que sabemos por ahora</h3>
+												<p class="ff-poppins">The Last Of Us Part 2, como ahora sabemos que se llama, se confirma, gracias al tráiler, para seguir la historia de Joel y Ellie.</p>
 											</div>
 										</div>
 									</div>
@@ -225,7 +262,7 @@
 							</div>
 							<div  class="row">
 								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<div class="grid">
+									<div class="grid" id="auth_ps4_10">
 										<div class="row">
 											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 												<img id="banner" src="./img/Noticia6.jpg">
@@ -244,13 +281,13 @@
 						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 							<div  class="row">
 								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<div class="grid">	
+									<div class="grid" id="auth_ps4_VR">	
 										<div class="row">
 											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-												<img id="banner" src="./img/Noticia2.jpg">
+												<img id="banner" src="./img/PS-VR.png">
 											</div>
-											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 noticias">
-												<b class="ff-amaranth">Localización de todas las fotos del Episodio 1 de Life is Strange para móviles</b>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 noticias"  style="text-align: center">
+												<b class="ff-amaranth">PlayStation VR: la guía de preguntas frecuentes</b>
 											</div>
 										</div>
 									</div>
@@ -258,16 +295,16 @@
 							</div>
 							<div class="row">
 								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<div class="grid">
+									<div class="grid" id="auth_ps4_pro">
 										<div class="row">
 											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-												<img id="banner" src="./img/Noticia3.jpg">
+												<img id="banner" src="./img/ps4-pro.png">
 											</div>
 										</div>
 										<div class="row">
 											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noticias">
-												<h3 class="ff-amaranth">Cuphead ya supera los 2 millones de unidades vendidas</h3>
-												<p class="ff-poppins">Cuphead ya supera los 2 millones de unidades vendidas en todo el mundo. Les hablamos del éxito del título de Microsoft y Studio MDHR para PC y Xbox One. Un excelente juego con increibles graficos y un diseño visual extraordinario</p>
+												<h3 class="ff-amaranth">Todo lo que tienes que saber acerca de la PS4 Pro</h3>
+												<p class="ff-poppins">Hace unos meses llegó a nosotros la nueva versión, la PlayStation 4 Pro y aunque para muchos fue una decepción que no fuera la PS5, sí que posee unas características que la separan de sus dos hermanas anteriores: la PS4 y la PS4 Slim.</p>
 											</div>
 										</div>
 									</div>
@@ -275,13 +312,13 @@
 							</div>
 							<div  class="row">
 								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<div class="grid" style="padding-bottom: 20px;">
+									<div class="grid" style="padding-bottom: 20px;"  id="auth_ps4_GOW">
 										<div class="row">
 											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-												<img id="banner" src="./img/Noticia8.png">
+												<img id="banner" src="./img/GOWcuadrado.jpg">
 											</div>
-											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 noticias">
-												<b class="ff-amaranth">Con OSU podras escuchar tu musica favorita mientras demuestras tus reflejos, ¿qué esperas? juegalo ya!</b>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 noticias" style="text-align: center; padding-top: 1em;">
+												<b class="ff-amaranth" >God of War, para PS4, se deja ver en unos nuevos y geniales artworks</b>
 											</div>
 										</div>
 									</div>
