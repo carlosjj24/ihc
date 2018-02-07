@@ -58,25 +58,59 @@
 					      <a class="navbar-brand barBoton" href="index.html">PowerPlay</a>
 					    </div>
 					    <div id="navbar" class="navbar-collapse collapse">
-						    <ul class="nav navbar-nav">
-						      <li><a class="barBoton resaltar" href="index.html" href="#" id="inicio">Inicio</a></li>
-						      <li><a class="barBoton resaltar" href="analisis.html" id="analisis">Análisis</a></li>
-						      <li><a class="barBoton resaltar" href="populares.html" id="populares">Populares</a></li>
-						      <li class="dropdown">
-						        <a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="consolas">Consolas &nbsp;<span class="	glyphicon glyphicon-menu-down"></span></a>
-						        <ul class="dropdown-menu bar">
-						          <li><a class="sobre" href="ps4.html">PS4</a></li>
-						          <li><a class="sobre" href="xbox.html">XBOX ONE</a></li>
-						          <li><a class="sobre" href="switch.html">NINTENDO SWITCH</a></li>
-						        </ul>
-						      </li>
-						      <li><a class="barBoton resaltar" href="contacto.html" id="contacto">Contacto</a></li>
-						    </ul>
-					        <ul class="nav navbar-nav navbar-right">
-					      	  <li><a class="barBoton right resaltar" href="#" data-toggle="modal" data-target="#myModal" id="registrar">Registrar</a></li>
-					      	  <li><a class="barBoton right resaltar" href="#" data-toggle="modal" data-target="#myModal2" id="inicioS">Iniciar Sesión</a></li>
-						    </ul>
-						</div>
+									<ul class="nav navbar-nav">
+										<li><a class="barBoton resaltar" href="index_auth.html" id="inicio">Inicio</a></li>
+										<li><a class="barBoton resaltar" href="analisis_auth.html" id="analisis">Análisis</a></li>
+										<li><a class="barBoton resaltar" href="populares_auth.html" id="populares">Populares</a></li>
+										<li class="active barBoton resaltar dropdown">
+											<a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="consolas">Consolas &nbsp;<span class="glyphicon glyphicon-menu-down"></span></a>
+											<ul class="dropdown-menu bar">
+												<li class="activo"><a class="sobre" href="#">PS4</a></li>
+												<li><a class="sobre" href="xbox_auth.html">XBOX ONE</a></li>
+												<li><a class="sobre" href="switch_auth.html">NINTENDO SWITCH</a></li>
+											</ul>
+										</li>
+										<li><a class="barBoton resaltar" href="contacto_auth.html" id="contacto">Contacto</a></li>
+									</ul>
+										<ul class="nav navbar-nav navbar-right">
+											<li class="dropdown inset">
+											<a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="NombreUsario"><img src="img/Profilepics/raineb.jpg" class="userImage" alt="Avatar"> &nbsp; RAINEB &nbsp; <span class="	glyphicon glyphicon-menu-down"></span></a>
+											<ul class="dropdown-menu bar perfilMenu">
+												<li>
+																		<div class="navbar-login">
+																				<div class="row">
+																						<div class="col-lg-12">
+																								<p class="text-center">
+																										<img src="img/Profilepics/raineb.jpg" class="userImage2" alt="Avatar">
+																								</p>
+																						</div>
+																						<div class="col-lg-12">
+																								<p class="text-left"><strong>Raquel Escalante</strong></p>
+																								<p class="text-left small">raquel@email.com</p>
+																								<p class="text-left">
+																										<a href="perfil.html" class="btn btn-primary btn-block btn-sm">Editar Perfil</a>
+																										<a href="admin_pub.html" class="btn btn-primary btn-block btn-sm">Mis Publicaciones</a>
+																								</p>
+																						</div>
+																				</div>
+																		</div>
+																</li>
+																<li class="divider"></li>
+																<li>
+																		<div class="navbar-login navbar-login-session">
+																				<div class="row">
+																						<div class="col-lg-12">
+																								<p>
+																										<a href="post_xbox_forza.html" class="btn btn-danger btn-block">Cerrar Sesion</a>
+																								</p>
+																						</div>
+																				</div>
+																		</div>
+																</li>
+											</ul>
+										</li>
+									</ul>
+							</div>
 					  </div>
 					</nav>
 				</div>	
@@ -152,7 +186,7 @@
 		      <div class="modal-footer" style="border: none;">
 		      	<div class="row">
 		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		        		<center><button onclick="location.href = 'post_xbox_auth.html';" type="button" class="btn modalBoton" data-dismiss="modal">Iniciar Sesión</button></center>
+		        		<center><button onclick="location.href = 'publicacion_auth.html';" type="button" class="btn modalBoton" data-dismiss="modal">Iniciar Sesión</button></center>
 		      		</div>
 		      	</div>
 		      	<div class="row">
@@ -203,21 +237,19 @@
 					<div class="publicacion">
 						<center>
 							<div class="pub-title-container">
-								<h1 class="ff-amaranth ft-upper">Xbox One X aumentó los ingresos de la división de gaming de Microsoft</h1>
-								<h4 class="ff-poppins fs-small">Publicado el 01/02/18 | Autor: <a href="#">raineb</a> | Categoría: <a href="analisis.html">Análisis</a>, <a href="xbox.html">XBOX</a></h4>
+								<h1 class="ff-amaranth ft-upper">Forza Horizon 3 en Xbox One X supera la versión de PC</h1>
+								<h4 class="ff-poppins fs-small">Publicado el 04/02/18 | Autor: <a href="#">raineb</a> | Categoría: <a href="analisis.html">Análisis</a>, <a href="xbox.html">XBOX</a></h4>
 							</div>
 						</center>
-						<img src="img/xbox.jpg" class="pub-img-container">
+						<img src="img/forza.jpg" class="pub-img-container">
 						<div class="pub-container ff-poppins">
-							<h4>Microsoft presentó su reporte financiero correspondiente al más reciente trimestre fiscal. En él, la compañía reveló que el lanzamiento del Xbox One X le ayudó a que los ingresos de su división de gaming presentara un crecimiento anual.</h4>
-							<p>De acuerdo con Microsoft, su división de gaming presentó un crecimiento anual de 8%. Esto fue gracias a que, durante los últimos meses de 2017, la venta de hardware de Xbox aumentó 14% gracias al lanzamiento de Xbox One X. Es importante señalar que, fiel a su tradición, Microsoft no reveló la cantidad de unidades que han vendido sus consolas.</p>
-							<p>Por otro lado, la compañía también informó que la venta de software y servicios relacionados con Xbox creció 4%. Si bien es un crecimiento menor al del año pasado, esto se debe a que su única exclusiva fue Forza Motorsport 7, mientras que 2016 su alineación de fin de año consistió de Forza Horizon 3 y Gears of War 4.</p>
-							<img src="img/xbox1.png" class="pub-inner-img-container">
-							<p>Más adelante, Microsoft confirmó que la cantidad de usuarios activos mensuales de Xbox LIVE presentó un crecimiento de 7% en comparación al mismo periodo del año pasado. Gracias a esto, la plataforma online de Microsoft cuenta con 59 millones de usuarios activos al mes. Es importante señalar que esto tiene en cuenta a todos los usuarios de Xbox LIVE en Xbox One, Xbox 360 y PC y no sólo a aquellos que pagan su membresía Gold.</p>
-							<p>Con todo lo anterior, esta división de Microsoft presentó ingresos de $3.92 MMDD. Para poner las cosas en perspectiva, te contamos que, en el trimestre fiscal anterior, los ingresos de Xbox fueron de $1.8 MMDD.</p>
+							<p>Forza Horizon 3 ya fue considerado uno de los mejores juegos en el apartado técnico cuando vio la luz en Xbox One. No cabe duda de que es un juego que cualquier usuario ha podido disfrutar en todo su esplendor, con un ciclo dia noche y climáticos que han convertido el extenso mapa de Australia, en un nuevo hogar. Forza Horizon 3 ya lucía de forma espectacular, no obstante, Xbox One X permite sacar un mayor partido de esta propuesta, obteniendo una experiencia 4k con una tasa de frames sólida y un acabado realmente abrumador.</p>
+							<p>El medio se deshace en elogios ante el brillante trabajo realizado en la adaptación de Forza Horizon 3 a Xbox One X, ofreciendo una experiencia 4K nativa pura. Además, se puede observar que frente a su versión de PC, se han incluido otras mejoras que permiten un mejor acabado. Aunque puedan lamentar que el juego no corra a 60fps, esta decisión parece ser un elemento inamovible de la saga Horizon en consola, donde PC permite ofrecer una mayor suavidad. No obstante, no impide que gracias a todas las cualidades, cítense los 4k y el HDR, aquellos que posean una televisión de alta gama podrán disfrutar de un espectáculo sin precedentes. Y es que esta actualización se ha centrado en mejorar los efectos visuales, marcando una diferencia bastante notable con la versión de PC.</p>
+							<img src="img/forza2.jpg" class="pub-inner-img-container">
+							<p>No cabe duda de que si eres fan de los coches, de la conducción arcade y de los mapas abiertos, Forza Horizon 3 es una de las mejores opciones disponibles. Ahora, gracias a esta actualización, sacar el máximo partido de Xbox One X y ofrecer un espectacular resultado justifica más, si cabe, entrar a formar parte del Festival Horizon.</p>
 							<div class="tag-container">
 								<h2 class="ff-amaranth ft-upper">Etiquetas:</h2>
-								<h5 class="ff-poppins"><a href="#">Xbox One</a>, <a href="#">Xbox</a>, <a href="#">Microsoft</a></h5>
+								<h5 class="ff-poppins"><a href="#">Xbox One</a>, <a href="#">Xbox</a>, <a href="#">Carreras</a>, <a href="#">Forza Horizon</a></h5>
 								<div class="row rating-share ff-poppins">
 									<div class="col-lg-7 col-md-7 col-sm-8 col-xs-8">
 										Comparte en Redes Sociales:
@@ -248,23 +280,13 @@
 						<div class="pub-comment-container">
 							<div class="row">
 								<h1 class="ff-amaranth ft-upper" style="padding-bottom: 2%">Comentarios</h1>
-								<div class="comment-container">
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-											<img class="img-responsive img-round" src="img/Profilepics/satonakada.jpg">
-										</div>
-										<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-											<h3 class="ff-amaranth"><a href="#">SatoNakada</a></h3>
-											<p class="ff-poppins">Wow, no lo sabía</p>
-											<hr>
-										</div>
-									</div> 
-								<div class="comment-container">
+									<div class="comment-container">
 										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
 											<img class="img-responsive img-round" src="img/Profilepics/pedrito.png">
 										</div>
 										<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
 											<h3 class="ff-amaranth"><a href="#">Pedrito</a></h3>
-											<p class="ff-poppins">Xbox me gusta mucho</p>
+											<p class="ff-poppins">¡Forza es uno de los mejores juegos que ha existido!</p>
 											<hr>
 										</div>
 									</div>
@@ -274,11 +296,20 @@
 										</div>
 										<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
 											<h3 class="ff-amaranth"><a href="#">Carlosjj</a></h3>
-											<p class="ff-poppins">Fascinante</p>
+											<p class="ff-poppins">¡Lo jugaré en mi PC, jajaja!</p>
 											<hr>
 										</div>
 									</div> 
-									
+									<div class="comment-container">
+										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+											<img class="img-responsive img-round" src="img/Profilepics/satonakada.jpg">
+										</div>
+										<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+											<h3 class="ff-amaranth"><a href="#">SatoNakada</a></h3>
+											<p class="ff-poppins">Otro juego para la consola sin juegos.</p>
+											<hr>
+										</div>
+									</div> 
 							</div>						
 						</div>
 						<div class="row">

@@ -58,25 +58,59 @@
 					      <a class="navbar-brand barBoton" href="index.html">PowerPlay</a>
 					    </div>
 					    <div id="navbar" class="navbar-collapse collapse">
-						    <ul class="nav navbar-nav">
-						      <li><a class="barBoton resaltar" href="index.html" href="#" id="inicio">Inicio</a></li>
-						      <li><a class="barBoton resaltar" href="analisis.html" id="analisis">Análisis</a></li>
-						      <li><a class="barBoton resaltar" href="populares.html" id="populares">Populares</a></li>
-						      <li class="dropdown">
-						        <a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="consolas">Consolas &nbsp;<span class="	glyphicon glyphicon-menu-down"></span></a>
-						        <ul class="dropdown-menu bar">
-						          <li><a class="sobre" href="ps4.html">PS4</a></li>
-						          <li><a class="sobre" href="xbox.html">XBOX ONE</a></li>
-						          <li><a class="sobre" href="switch.html">NINTENDO SWITCH</a></li>
-						        </ul>
-						      </li>
-						      <li><a class="barBoton resaltar" href="contacto.html" id="contacto">Contacto</a></li>
-						    </ul>
-					        <ul class="nav navbar-nav navbar-right">
-					      	  <li><a class="barBoton right resaltar" href="#" data-toggle="modal" data-target="#myModal" id="registrar">Registrar</a></li>
-					      	  <li><a class="barBoton right resaltar" href="#" data-toggle="modal" data-target="#myModal2" id="inicioS">Iniciar Sesión</a></li>
-						    </ul>
-						</div>
+									<ul class="nav navbar-nav">
+										<li><a class="barBoton resaltar" href="index_auth.html" id="inicio">Inicio</a></li>
+										<li><a class="barBoton resaltar" href="analisis_auth.html" id="analisis">Análisis</a></li>
+										<li><a class="barBoton resaltar" href="populares_auth.html" id="populares">Populares</a></li>
+										<li class="active barBoton resaltar dropdown">
+											<a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="consolas">Consolas &nbsp;<span class="glyphicon glyphicon-menu-down"></span></a>
+											<ul class="dropdown-menu bar">
+												<li class="activo"><a class="sobre" href="#">PS4</a></li>
+												<li><a class="sobre" href="xbox_auth.html">XBOX ONE</a></li>
+												<li><a class="sobre" href="switch_auth.html">NINTENDO SWITCH</a></li>
+											</ul>
+										</li>
+										<li><a class="barBoton resaltar" href="contacto_auth.html" id="contacto">Contacto</a></li>
+									</ul>
+										<ul class="nav navbar-nav navbar-right">
+											<li class="dropdown inset">
+											<a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="NombreUsario"><img src="img/Profilepics/raineb.jpg" class="userImage" alt="Avatar"> &nbsp; RAINEB &nbsp; <span class="	glyphicon glyphicon-menu-down"></span></a>
+											<ul class="dropdown-menu bar perfilMenu">
+												<li>
+																		<div class="navbar-login">
+																				<div class="row">
+																						<div class="col-lg-12">
+																								<p class="text-center">
+																										<img src="img/Profilepics/raineb.jpg" class="userImage2" alt="Avatar">
+																								</p>
+																						</div>
+																						<div class="col-lg-12">
+																								<p class="text-left"><strong>Raquel Escalante</strong></p>
+																								<p class="text-left small">raquel@email.com</p>
+																								<p class="text-left">
+																										<a href="perfil.html" class="btn btn-primary btn-block btn-sm">Editar Perfil</a>
+																										<a href="admin_pub.html" class="btn btn-primary btn-block btn-sm">Mis Publicaciones</a>
+																								</p>
+																						</div>
+																				</div>
+																		</div>
+																</li>
+																<li class="divider"></li>
+																<li>
+																		<div class="navbar-login navbar-login-session">
+																				<div class="row">
+																						<div class="col-lg-12">
+																								<p>
+																										<a href="post_ps4_pro.html" class="btn btn-danger btn-block">Cerrar Sesion</a>
+																								</p>
+																						</div>
+																				</div>
+																		</div>
+																</li>
+											</ul>
+										</li>
+									</ul>
+							</div>
 					  </div>
 					</nav>
 				</div>	
@@ -152,7 +186,7 @@
 		      <div class="modal-footer" style="border: none;">
 		      	<div class="row">
 		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		        		<center><button onclick="location.href = 'post_xbox_auth.html';" type="button" class="btn modalBoton" data-dismiss="modal">Iniciar Sesión</button></center>
+		        		<center><button onclick="location.href = 'publicacion_auth.html';" type="button" class="btn modalBoton" data-dismiss="modal">Iniciar Sesión</button></center>
 		      		</div>
 		      	</div>
 		      	<div class="row">
@@ -203,21 +237,22 @@
 					<div class="publicacion">
 						<center>
 							<div class="pub-title-container">
-								<h1 class="ff-amaranth ft-upper">Xbox One X aumentó los ingresos de la división de gaming de Microsoft</h1>
-								<h4 class="ff-poppins fs-small">Publicado el 01/02/18 | Autor: <a href="#">raineb</a> | Categoría: <a href="analisis.html">Análisis</a>, <a href="xbox.html">XBOX</a></h4>
+								<h1 class="ff-amaranth ft-upper">Todo lo que tienes que saber acerca de la PS4 Pro</h1>
+								<h4 class="ff-poppins fs-small">Publicado el 05/02/18 | Autor: <a href="#">Pedrito</a> | Categoría: <a href="analisis.html">Análisis</a>, <a href="ps4.html">PS4</a></h4>
 							</div>
 						</center>
-						<img src="img/xbox.jpg" class="pub-img-container">
+						<img src="img/ps4_pro.jpg" class="pub-img-container">
 						<div class="pub-container ff-poppins">
-							<h4>Microsoft presentó su reporte financiero correspondiente al más reciente trimestre fiscal. En él, la compañía reveló que el lanzamiento del Xbox One X le ayudó a que los ingresos de su división de gaming presentara un crecimiento anual.</h4>
-							<p>De acuerdo con Microsoft, su división de gaming presentó un crecimiento anual de 8%. Esto fue gracias a que, durante los últimos meses de 2017, la venta de hardware de Xbox aumentó 14% gracias al lanzamiento de Xbox One X. Es importante señalar que, fiel a su tradición, Microsoft no reveló la cantidad de unidades que han vendido sus consolas.</p>
-							<p>Por otro lado, la compañía también informó que la venta de software y servicios relacionados con Xbox creció 4%. Si bien es un crecimiento menor al del año pasado, esto se debe a que su única exclusiva fue Forza Motorsport 7, mientras que 2016 su alineación de fin de año consistió de Forza Horizon 3 y Gears of War 4.</p>
-							<img src="img/xbox1.png" class="pub-inner-img-container">
-							<p>Más adelante, Microsoft confirmó que la cantidad de usuarios activos mensuales de Xbox LIVE presentó un crecimiento de 7% en comparación al mismo periodo del año pasado. Gracias a esto, la plataforma online de Microsoft cuenta con 59 millones de usuarios activos al mes. Es importante señalar que esto tiene en cuenta a todos los usuarios de Xbox LIVE en Xbox One, Xbox 360 y PC y no sólo a aquellos que pagan su membresía Gold.</p>
-							<p>Con todo lo anterior, esta división de Microsoft presentó ingresos de $3.92 MMDD. Para poner las cosas en perspectiva, te contamos que, en el trimestre fiscal anterior, los ingresos de Xbox fueron de $1.8 MMDD.</p>
+							<p>Hace unos meses llegó a nosotros la nueva versión, la PlayStation 4 Pro y aunque para muchos fue una decepción que no fuera la PS5, sí que posee unas características que la separan de sus dos hermanas anteriores: la PS4 y la PS4 Slim.</p>
+							<p>En cuanto a conexiones, ahora disponemos de un amplio abanico: dos puertos USB en la parte frontal, uno más en la parte trasera, HDMI 2.0 (frente al 1.4 de la versión anterior), Bluetooth 4.0 (antes 2.1) y WiFi ac, mientras que las anteriores poseían WiFi n (y mantiene el puerto Ethernet). Todo esto, por supuesto, mejorará nuestra experiencia con la consola siempre que, por ejemplo, dispongamos de un router compatible con WiFi ac (también conocido como WiFi 5G o WiFi Gigabit), por eso es importante tener en cuenta los dispositivos a los que vamos a conectar la PS4 Pro.</p>
+							<p>Juegos online, streaming de películas y series desde Netflix, YouTube o Amazon por ejemplo, son solo algunas de las formas con las que podremos aprovechar estas mejores conexiones inalámbricas.</p>
+							<img src="img/ps4_pro1.jpg" class="pub-inner-img-container">
+							<p>Diseñada para disfrutarla en 4K, la PS4 Pro soporta imagen en HDR (Alto Rendimiento Dinámico), con lo que los tonos de piel son más cálidos, las texturas más realistas, los colores más vibrantes… Eso sí, podemos jugar en una TV Full HD y notaremos cierta mejora, pero para disfrutar plenamente de esta espectacularidad gráfica lo ideal es disponer de una televisión 4K compatible con HDR de 10 bits y pasaremos de jugar con una consola a vivir el juego casi como si fuéramos parte de él.</p>
+							<h3>En conclusión</h3>
+							<p>En resumen, claramente merece la pena reciclar nuestra PS4 y subir varios peldaños en espectacularidad y fluidez con la PS4 Pro. Si le añadimos una buena conexión WiFi y una TV 4K no solo habremos cambiado de consola, veremos nuestra afición favorita con otros ojos, literalmente. Si, además, añadimos el sistema PS VR, habremos entrado de lleno en el futuro de los juegos.</p>
 							<div class="tag-container">
 								<h2 class="ff-amaranth ft-upper">Etiquetas:</h2>
-								<h5 class="ff-poppins"><a href="#">Xbox One</a>, <a href="#">Xbox</a>, <a href="#">Microsoft</a></h5>
+								<h5 class="ff-poppins"><a href="#">PS4</a>, <a href="#">PRO</a>, <a href="#">Consolas</a>, <a href="#">SONY</a></h5>
 								<div class="row rating-share ff-poppins">
 									<div class="col-lg-7 col-md-7 col-sm-8 col-xs-8">
 										Comparte en Redes Sociales:
@@ -236,11 +271,13 @@
 						<div class="author-container">
 							<div class="row">
 								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-									<img class="img-responsive" src="img/Profilepics/raineb.jpg">
+									<img class="img-responsive" src="img/Profilepics/pedrito.png">
 								</div>
 								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-									<h2 class="ff-amaranth ft-upper"><a href="#">raineb</a></h2>
-									<p class="ff-poppins">Aficionada a los videojuegos y estudiante de computación, en mis tiempos libres me gusta leer noticias sobres consolas y videojuegos  nuevos además de escribir sobre estos para mostrarle a las demás personas lo interesante de los videojuegos.										</p>
+									<h2 class="ff-amaranth ft-upper"><a href="#">Pedrito</a></h2>
+									<p class="ff-poppins">Al ser computista, te encuentras inmerso en este gran mundo 
+									al cual lentamente te das cuenta que no puedes salir, los videojuegos; son mi vida y
+									mi pasión. Por lo tanto, trato mantenerlos al día con las últimas novedades de los videojuegos.</p>
 								</div>
 							</div>
 						</div>
@@ -250,21 +287,11 @@
 								<h1 class="ff-amaranth ft-upper" style="padding-bottom: 2%">Comentarios</h1>
 								<div class="comment-container">
 										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-											<img class="img-responsive img-round" src="img/Profilepics/satonakada.jpg">
-										</div>
-										<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-											<h3 class="ff-amaranth"><a href="#">SatoNakada</a></h3>
-											<p class="ff-poppins">Wow, no lo sabía</p>
-											<hr>
-										</div>
-									</div> 
-								<div class="comment-container">
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-											<img class="img-responsive img-round" src="img/Profilepics/pedrito.png">
+											<img class="img-responsive img-round" src="img/Profilepics/raineb.jpg">
 										</div>
 										<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
 											<h3 class="ff-amaranth"><a href="#">Pedrito</a></h3>
-											<p class="ff-poppins">Xbox me gusta mucho</p>
+											<p class="ff-poppins">Las diferenias entre el ps4 y el ps4 pro son grandes</p>
 											<hr>
 										</div>
 									</div>
@@ -274,11 +301,20 @@
 										</div>
 										<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
 											<h3 class="ff-amaranth"><a href="#">Carlosjj</a></h3>
-											<p class="ff-poppins">Fascinante</p>
+											<p class="ff-poppins">Me encanta la nueva versón</p>
 											<hr>
 										</div>
 									</div> 
-									
+									<div class="comment-container">
+										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+											<img class="img-responsive img-round" src="img/Profilepics/satonakada.jpg">
+										</div>
+										<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+											<h3 class="ff-amaranth"><a href="#">SatoNakada</a></h3>
+											<p class="ff-poppins">La inclusión de resolución 4K es muy importante</p>
+											<hr>
+										</div>
+									</div> 
 							</div>						
 						</div>
 						<div class="row">

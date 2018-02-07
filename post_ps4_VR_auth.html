@@ -58,25 +58,59 @@
 					      <a class="navbar-brand barBoton" href="index.html">PowerPlay</a>
 					    </div>
 					    <div id="navbar" class="navbar-collapse collapse">
-						    <ul class="nav navbar-nav">
-						      <li><a class="barBoton resaltar" href="index.html" href="#" id="inicio">Inicio</a></li>
-						      <li><a class="barBoton resaltar" href="analisis.html" id="analisis">Análisis</a></li>
-						      <li><a class="barBoton resaltar" href="populares.html" id="populares">Populares</a></li>
-						      <li class="dropdown">
-						        <a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="consolas">Consolas &nbsp;<span class="	glyphicon glyphicon-menu-down"></span></a>
-						        <ul class="dropdown-menu bar">
-						          <li><a class="sobre" href="ps4.html">PS4</a></li>
-						          <li><a class="sobre" href="xbox.html">XBOX ONE</a></li>
-						          <li><a class="sobre" href="switch.html">NINTENDO SWITCH</a></li>
-						        </ul>
-						      </li>
-						      <li><a class="barBoton resaltar" href="contacto.html" id="contacto">Contacto</a></li>
-						    </ul>
-					        <ul class="nav navbar-nav navbar-right">
-					      	  <li><a class="barBoton right resaltar" href="#" data-toggle="modal" data-target="#myModal" id="registrar">Registrar</a></li>
-					      	  <li><a class="barBoton right resaltar" href="#" data-toggle="modal" data-target="#myModal2" id="inicioS">Iniciar Sesión</a></li>
-						    </ul>
-						</div>
+									<ul class="nav navbar-nav">
+										<li><a class="barBoton resaltar" href="index_auth.html" id="inicio">Inicio</a></li>
+										<li><a class="barBoton resaltar" href="analisis_auth.html" id="analisis">Análisis</a></li>
+										<li><a class="barBoton resaltar" href="populares_auth.html" id="populares">Populares</a></li>
+										<li class="active barBoton resaltar dropdown">
+											<a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="consolas">Consolas &nbsp;<span class="glyphicon glyphicon-menu-down"></span></a>
+											<ul class="dropdown-menu bar">
+												<li class="activo"><a class="sobre" href="#">PS4</a></li>
+												<li><a class="sobre" href="xbox_auth.html">XBOX ONE</a></li>
+												<li><a class="sobre" href="switch_auth.html">NINTENDO SWITCH</a></li>
+											</ul>
+										</li>
+										<li><a class="barBoton resaltar" href="contacto_auth.html" id="contacto">Contacto</a></li>
+									</ul>
+										<ul class="nav navbar-nav navbar-right">
+											<li class="dropdown inset">
+											<a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="NombreUsario"><img src="img/Profilepics/raineb.jpg" class="userImage" alt="Avatar"> &nbsp; RAINEB &nbsp; <span class="	glyphicon glyphicon-menu-down"></span></a>
+											<ul class="dropdown-menu bar perfilMenu">
+												<li>
+																		<div class="navbar-login">
+																				<div class="row">
+																						<div class="col-lg-12">
+																								<p class="text-center">
+																										<img src="img/Profilepics/raineb.jpg" class="userImage2" alt="Avatar">
+																								</p>
+																						</div>
+																						<div class="col-lg-12">
+																								<p class="text-left"><strong>Raquel Escalante</strong></p>
+																								<p class="text-left small">raquel@email.com</p>
+																								<p class="text-left">
+																										<a href="perfil.html" class="btn btn-primary btn-block btn-sm">Editar Perfil</a>
+																										<a href="admin_pub.html" class="btn btn-primary btn-block btn-sm">Mis Publicaciones</a>
+																								</p>
+																						</div>
+																				</div>
+																		</div>
+																</li>
+																<li class="divider"></li>
+																<li>
+																		<div class="navbar-login navbar-login-session">
+																				<div class="row">
+																						<div class="col-lg-12">
+																								<p>
+																										<a href="post_ps4_VR.html" class="btn btn-danger btn-block">Cerrar Sesion</a>
+																								</p>
+																						</div>
+																				</div>
+																		</div>
+																</li>
+											</ul>
+										</li>
+									</ul>
+							</div>
 					  </div>
 					</nav>
 				</div>	
@@ -152,7 +186,7 @@
 		      <div class="modal-footer" style="border: none;">
 		      	<div class="row">
 		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		        		<center><button onclick="location.href = 'post_xbox_auth.html';" type="button" class="btn modalBoton" data-dismiss="modal">Iniciar Sesión</button></center>
+		        		<center><button onclick="location.href = 'publicacion_auth.html';" type="button" class="btn modalBoton" data-dismiss="modal">Iniciar Sesión</button></center>
 		      		</div>
 		      	</div>
 		      	<div class="row">
@@ -203,21 +237,33 @@
 					<div class="publicacion">
 						<center>
 							<div class="pub-title-container">
-								<h1 class="ff-amaranth ft-upper">Xbox One X aumentó los ingresos de la división de gaming de Microsoft</h1>
-								<h4 class="ff-poppins fs-small">Publicado el 01/02/18 | Autor: <a href="#">raineb</a> | Categoría: <a href="analisis.html">Análisis</a>, <a href="xbox.html">XBOX</a></h4>
+								<h1 class="ff-amaranth ft-upper">PlayStation VR: la guía de preguntas frecuentes</h1>
+								<h4 class="ff-poppins fs-small">Publicado el 05/02/18 | Autor: <a href="#">Pedrito</a> | Categoría: <a href="analisis.html">Análisis</a>, <a href="ps4.html">PS4</a></h4>
 							</div>
 						</center>
-						<img src="img/xbox.jpg" class="pub-img-container">
+						<img src="img/PlayStation.jpg" class="pub-img-container">
 						<div class="pub-container ff-poppins">
-							<h4>Microsoft presentó su reporte financiero correspondiente al más reciente trimestre fiscal. En él, la compañía reveló que el lanzamiento del Xbox One X le ayudó a que los ingresos de su división de gaming presentara un crecimiento anual.</h4>
-							<p>De acuerdo con Microsoft, su división de gaming presentó un crecimiento anual de 8%. Esto fue gracias a que, durante los últimos meses de 2017, la venta de hardware de Xbox aumentó 14% gracias al lanzamiento de Xbox One X. Es importante señalar que, fiel a su tradición, Microsoft no reveló la cantidad de unidades que han vendido sus consolas.</p>
-							<p>Por otro lado, la compañía también informó que la venta de software y servicios relacionados con Xbox creció 4%. Si bien es un crecimiento menor al del año pasado, esto se debe a que su única exclusiva fue Forza Motorsport 7, mientras que 2016 su alineación de fin de año consistió de Forza Horizon 3 y Gears of War 4.</p>
-							<img src="img/xbox1.png" class="pub-inner-img-container">
-							<p>Más adelante, Microsoft confirmó que la cantidad de usuarios activos mensuales de Xbox LIVE presentó un crecimiento de 7% en comparación al mismo periodo del año pasado. Gracias a esto, la plataforma online de Microsoft cuenta con 59 millones de usuarios activos al mes. Es importante señalar que esto tiene en cuenta a todos los usuarios de Xbox LIVE en Xbox One, Xbox 360 y PC y no sólo a aquellos que pagan su membresía Gold.</p>
-							<p>Con todo lo anterior, esta división de Microsoft presentó ingresos de $3.92 MMDD. Para poner las cosas en perspectiva, te contamos que, en el trimestre fiscal anterior, los ingresos de Xbox fueron de $1.8 MMDD.</p>
+							<h2 style="text-align: left;">Te explicamos todo lo que debes saber sobre el revolucionario dispositivo de realidad virtual.</h2>
+							<p>e damos la bienvenida al centro de recursos oficial de información sobre PlayStation VR. En él lo encontrarás todo, de los requisitos de configuración a las especificaciones técnicas. Si tienes alguna pregunta sobre PS VR, en esta guía deberías encontrar la respuesta. Y si no encuentras lo que buscas, solo tienes que dejarnos una nota en los comentarios que hay más abajo. Haremos todo lo posible por actualizar la información de forma continua antes, durante y después del lanzamiento.</p>
+							<p>ahora… vamos a ver las preguntas frecuentes definitivas.</p>
+							<h3>¿Qué es PlayStation VR? ¿Cuánto cuesta?</h3>
+							<p>PlayStation VR es nuestro dispositivo de realidad virtual para PlayStation 4, disponible el 13 de octubre. El producto básico incluye el dispositivo PS VR, los auriculares y todos los cables necesarios, con un precio de venta recomendado de 399,99 €.</p>
+							<h3>¿Qué debo tener para disfrutar de PS VR?</h3>
+							<p>PlayStation VR te permite experimentar el futuro de los juegos en realidad virtual con un dispositivo PS VR, tu PS4 y una PlayStation Camera. La mayoría de los juegos utilizan el mando inalámbrico DUALSHOCK 4. Muchos juegos para PS VR incluyen la opción de mejorar la experiencia con el uso de dos mandos de movimiento PlayStation Move, aunque solo un número limitado de juegos requiere dos. El shooter de ciencia ficción exclusivo de PS VR, Farpoint, utiliza el mando pistola de PS VR para ofrecer una forma realista y precisa de controlar el juego.</p>
+							<h3>¿Cuánto mide y pesa PS VR?</h3>
+							<p>Pesa aproximadamente 1,3 lbs – 589,7 gramos – (sin cable) y tiene unas dimensiones aproximadas de 7,4 x 7,3 x 10,9 pulgadas o lo que es lo mismo: 18,79 cm. x 18,5 cm. x 25,4 cm. (ancho x alto x largo, sin incluir la pieza que sobresale, parte más estrecha de la diadema).</p>
+							<img src="img/ps4_neo.jpg" class="pub-inner-img-container">
+							<h3>¿Qué es RV?</h3>
+							<p>RV son las siglas de realidad virtual, que es una simulación de otra realidad creada por diseñadores y programadores. Actualmente, el dispositivo PS VR ofrece una experiencia de realidad virtual a tus ojos y tus oídos mediante una combinación de seguimiento de la cabeza 1:1 de 360 grados, imágenes estereoscópicas de campo de visión amplio con una alta velocidad de actualización de 120 Hz y audio 3D binaural que hace a tu cerebro pensar que te han transportado a otro mundo. Llamamos a esta sensación ‘presencia’, y es cuando sentimos como si estuviéramos presentes en otro lugar en el espacio (y el tiempo) y nuestro cerebro empieza a creer esta nueva ‘realidad virtual’.</p>
+							<h3>¿Hay una edad mínima recomendada para utilizar PS VR?</h3>
+							<p>12 años o más.</p>
+							<h3>¿Sentiré nauseas mientras juego con PlayStation VR?</h3>
+							<p>La respuesta de los jugadores a la realidad virtual puede ser diferente, pero generalmente nuestras pruebas con usuarios indican que la amplia mayoría de los jugadores no tiene problemas para adaptarse a la forma de juego que ofrece PlayStation VR. Asegúrate de probar el disco de demos de PS VR para determinar los juegos y las experiencias que prefieres.  En muchos casos, la incomodidad inicial que experimentas desaparece al acostumbrarse a la forma de jugar en realidad virtual. Te recomendamos que hagas descansos de 15 minutos cada hora cuando utilices PS VR y, si sientes algún tipo de molestia, dejes de jugar.</p>
+							<h3>¿Qué espacio físico necesito para jugar?</h3>
+							<p>El espacio recomendado para jugar tiene un total aproximado de 9,8 por 6,2 pies (2,7 m. x 1,8m.) , y el usuario de realidad virtual debe sentarse aproximadamente a 5 pies (1,5 m.)  frente a PlayStation Camera o el televisor. Asegúrate de que no hay paredes, muebles u objetos que obstaculizan tu espacio de juego en realidad virtual.</p>
 							<div class="tag-container">
 								<h2 class="ff-amaranth ft-upper">Etiquetas:</h2>
-								<h5 class="ff-poppins"><a href="#">Xbox One</a>, <a href="#">Xbox</a>, <a href="#">Microsoft</a></h5>
+								<h5 class="ff-poppins"><a href="#">The Last Of Us</a>, <a href="#">PS4</a>, <a href="#">Zombies</a>, <a href="#">Post-Apocalipsis</a></h5>
 								<div class="row rating-share ff-poppins">
 									<div class="col-lg-7 col-md-7 col-sm-8 col-xs-8">
 										Comparte en Redes Sociales:
@@ -236,11 +282,13 @@
 						<div class="author-container">
 							<div class="row">
 								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-									<img class="img-responsive" src="img/Profilepics/raineb.jpg">
+									<img class="img-responsive" src="img/Profilepics/pedrito.png">
 								</div>
 								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-									<h2 class="ff-amaranth ft-upper"><a href="#">raineb</a></h2>
-									<p class="ff-poppins">Aficionada a los videojuegos y estudiante de computación, en mis tiempos libres me gusta leer noticias sobres consolas y videojuegos  nuevos además de escribir sobre estos para mostrarle a las demás personas lo interesante de los videojuegos.										</p>
+									<h2 class="ff-amaranth ft-upper"><a href="#">Pedrito</a></h2>
+									<p class="ff-poppins">Al ser computista, te encuentras inmerso en este gran mundo 
+									al cual lentamente te das cuenta que no puedes salir, los videojuegos; son mi vida y
+									mi pasión. Por lo tanto, trato mantenerlos al día con las últimas novedades de los videojuegos.</p>
 								</div>
 							</div>
 						</div>
@@ -250,35 +298,35 @@
 								<h1 class="ff-amaranth ft-upper" style="padding-bottom: 2%">Comentarios</h1>
 								<div class="comment-container">
 										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-											<img class="img-responsive img-round" src="img/Profilepics/satonakada.jpg">
+											<img class="img-responsive img-round" src="img/Profilepics/carlosjj.jpg">
 										</div>
 										<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-											<h3 class="ff-amaranth"><a href="#">SatoNakada</a></h3>
-											<p class="ff-poppins">Wow, no lo sabía</p>
+											<h3 class="ff-amaranth"><a href="#">Carlosjj</a></h3>
+											<p class="ff-poppins">VR con zombies no combinan</p>
 											<hr>
 										</div>
 									</div> 
 								<div class="comment-container">
 										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-											<img class="img-responsive img-round" src="img/Profilepics/pedrito.png">
+											<img class="img-responsive img-round" src="img/Profilepics/raineb.jpg">
 										</div>
 										<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-											<h3 class="ff-amaranth"><a href="#">Pedrito</a></h3>
-											<p class="ff-poppins">Xbox me gusta mucho</p>
+											<h3 class="ff-amaranth"><a href="#">Raineb</a></h3>
+											<p class="ff-poppins">VR es la mejor integración que PS4 ha podido hacer</p>
 											<hr>
 										</div>
 									</div>
+									
 									<div class="comment-container">
 										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-											<img class="img-responsive img-round" src="img/Profilepics/carlosjj.jpg">
+											<img class="img-responsive img-round" src="img/Profilepics/satonakada.jpg">
 										</div>
 										<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-											<h3 class="ff-amaranth"><a href="#">Carlosjj</a></h3>
-											<p class="ff-poppins">Fascinante</p>
+											<h3 class="ff-amaranth"><a href="#">SatoNakada</a></h3>
+											<p class="ff-poppins">Si pero los lentes son demasiado caros ._.</p>
 											<hr>
 										</div>
 									</div> 
-									
 							</div>						
 						</div>
 						<div class="row">

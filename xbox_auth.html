@@ -17,7 +17,9 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="./css/estilo.css" rel="stylesheet" type="text/css" media="screen" />
-	    <script type="text/javascript" src="./js/backend_auth.js"></script>
+	    <script type="text/javascript" src="./js/datos.json"></script>
+	    <script type="text/javascript" src="./js/config.json"></script>
+	    <script type="text/javascript" src="./js/backend.js"></script>
 	    <!--Función para rotar los carets en los dropdowns-->
 	    <script>
 		  $(function(){
@@ -55,59 +57,59 @@
 					      <a class="navbar-brand barBoton" href="index.html">PowerPlay</a>
 					    </div>
 					    <div id="navbar" class="navbar-collapse collapse">
-						    <ul class="nav navbar-nav">
-						      <li><a class="barBoton resaltar" href="index_auth.html" id="inicio">Inicio</a></li>
-						      <li><a class="barBoton resaltar" href="analisis_auth.html" id="analisis">Análisis</a></li>
-						      <li><a class="barBoton resaltar" href="populares_auth.html" id="populares">Populares</a></li>
-						      <li class="active barBoton resaltar dropdown">
-						        <a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="consolas">Consolas &nbsp;<span class="glyphicon glyphicon-menu-down"></span></a>
-						        <ul class="dropdown-menu bar">
-						          <li><a class="sobre" href="#">PS4</a></li>
-						          <li class="activo"><a class="sobre" href="xbox_auth.html">XBOX ONE</a></li>
-						          <li><a class="sobre" href="switch_auth.html">NINTENDO SWITCH</a></li>
-						        </ul>
-						      </li>
-						      <li><a class="barBoton resaltar" href="contacto_auth.html" id="contacto">Contacto</a></li>
-						    </ul>
-					        <ul class="nav navbar-nav navbar-right">
-					      	  <li class="dropdown inset">
-						        <a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="NombreUsario"><img src="img/Profilepics/raineb.jpg" class="userImage" alt="Avatar"> &nbsp; RAINEB &nbsp; <span class="	glyphicon glyphicon-menu-down"></span></a>
-						        <ul class="dropdown-menu bar perfilMenu">
-						        	<li>
-			                            <div class="navbar-login">
-			                                <div class="row">
-			                                    <div class="col-lg-12">
-			                                        <p class="text-center">
-			                                            <img src="img/Profilepics/raineb.jpg" class="userImage2" alt="Avatar">
-			                                        </p>
-			                                    </div>
-			                                    <div class="col-lg-12">
-			                                        <p class="text-left"><strong>Raquel Escalante</strong></p>
-			                                        <p class="text-left small">raquel@email.com</p>
-			                                        <p class="text-left">
-			                                            <a href="perfil.html" class="btn btn-primary btn-block btn-sm">Editar Perfil</a>
-			                                            <a href="admin_pub.html" class="btn btn-primary btn-block btn-sm">Mis Publicaciones</a>
-			                                        </p>
-			                                    </div>
-			                                </div>
-			                            </div>
-			                        </li>
-			                        <li class="divider"></li>
-			                        <li>
-			                            <div class="navbar-login navbar-login-session">
-			                                <div class="row">
-			                                    <div class="col-lg-12">
-			                                        <p>
-			                                            <a href="xbox.html" class="btn btn-danger btn-block">Cerrar Sesion</a>
-			                                        </p>
-			                                    </div>
-			                                </div>
-			                            </div>
-			                        </li>
-						        </ul>
-						      </li>
-						    </ul>
-						</div>
+									<ul class="nav navbar-nav">
+										<li><a class="barBoton resaltar" href="index_auth.html" id="inicio">Inicio</a></li>
+										<li><a class="barBoton resaltar" href="analisis_auth.html" id="analisis">Análisis</a></li>
+										<li><a class="barBoton resaltar" href="populares_auth.html" id="populares">Populares</a></li>
+										<li class="active barBoton resaltar dropdown">
+											<a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="consolas">Consolas &nbsp;<span class="glyphicon glyphicon-menu-down"></span></a>
+											<ul class="dropdown-menu bar">
+												<li class="activo"><a class="sobre" href="#">PS4</a></li>
+												<li><a class="sobre" href="xbox_auth.html">XBOX ONE</a></li>
+												<li><a class="sobre" href="switch_auth.html">NINTENDO SWITCH</a></li>
+											</ul>
+										</li>
+										<li><a class="barBoton resaltar" href="contacto_auth.html" id="contacto">Contacto</a></li>
+									</ul>
+										<ul class="nav navbar-nav navbar-right">
+											<li class="dropdown inset">
+											<a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="NombreUsario"><img src="img/Profilepics/raineb.jpg" class="userImage" alt="Avatar"> &nbsp; RAINEB &nbsp; <span class="	glyphicon glyphicon-menu-down"></span></a>
+											<ul class="dropdown-menu bar perfilMenu">
+												<li>
+																		<div class="navbar-login">
+																				<div class="row">
+																						<div class="col-lg-12">
+																								<p class="text-center">
+																										<img src="img/Profilepics/raineb.jpg" class="userImage2" alt="Avatar">
+																								</p>
+																						</div>
+																						<div class="col-lg-12">
+																								<p class="text-left"><strong>Raquel Escalante</strong></p>
+																								<p class="text-left small">raquel@email.com</p>
+																								<p class="text-left">
+																										<a href="perfil.html" class="btn btn-primary btn-block btn-sm">Editar Perfil</a>
+																										<a href="admin_pub.html" class="btn btn-primary btn-block btn-sm">Mis Publicaciones</a>
+																								</p>
+																						</div>
+																				</div>
+																		</div>
+																</li>
+																<li class="divider"></li>
+																<li>
+																		<div class="navbar-login navbar-login-session">
+																				<div class="row">
+																						<div class="col-lg-12">
+																								<p>
+																										<a href="ps4.html" class="btn btn-danger btn-block">Cerrar Sesion</a>
+																								</p>
+																						</div>
+																				</div>
+																		</div>
+																</li>
+											</ul>
+										</li>
+									</ul>
+							</div>
 					  </div>
 					</nav>
 				</div>	
@@ -163,7 +165,7 @@
 		<div id="myModal2" class="modal fade ff-poppins" role="dialog">
 		  <div class="modal-dialog modal-sm">
 		    <!-- Modal content-->
-		    <div class="modal-content mod">
+		    <div id="inicio" class="modal-content mod">
 		      <div class="modal-header"  style="border: none; padding-top: 5%; padding-bottom: 1%;">
 		        <button type="button" class="close" data-dismiss="modal">&times;</button>
 		        <center><strong><h4 class="modal-title">Iniciar Sesión</h4></strong></center>
@@ -183,7 +185,42 @@
 		      <div class="modal-footer" style="border: none;">
 		      	<div class="row">
 		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		        		<center><button type="button" onclick="location.href = 'xbox_auth.html';" class="btn modalBoton" data-dismiss="modal">Iniciar Sesión</button></center>
+		        		<center><button onclick="location.href = 'xbox_auth.html';" type="button" class="btn modalBoton" data-dismiss="modal">Iniciar Sesión</button></center>
+		      		</div>
+		      	</div>
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		      			<br>
+		        		<center><a data-toggle="modal" data-target="#myModal3" data-dismiss="modal">¿Olvido su Contraseña?</a></center>
+		      		</div>
+		      	</div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div id="myModal3" class="modal fade ff-poppins" role="dialog">
+		  <div class="modal-dialog modal-sm">
+		    <!-- Modal content-->
+		    <div id="recuperar" class="modal-content mod">
+		      <div class="modal-header"  style="border: none; padding-top: 5%; padding-bottom: 1%;">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <center><strong><h4 class="modal-title">Enviar Contraseña</h4></strong></center>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		      			<input type="email" name="email" placeholder="Correo">
+		      		</div>
+		      	</div>
+		      </div>
+		      <div class="modal-footer" style="border: none;">
+		      	<div class="row">
+		      		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+		        		<center><button type="button"  data-toggle="modal" data-target="#myModal2" class="btn modalBoton" data-dismiss="modal">Volver</button></center>
+		      		</div>
+		      		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+		        		<center><button type="button" class="btn modalBoton" data-dismiss="modal">Enviar</button></center>
 		      		</div>
 		      	</div>
 		      </div>
@@ -199,58 +236,35 @@
 				<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 topPad">
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<center> <h1 class="ff-amaranth"> XBOX </h1></center>
+							<center> <h1 class="ff-amaranth"> XBOX ONE </h1></center>
 							<br>
 						</div>
 					</div>
 					<!-- Noticias -->
-					<div class="row">
-						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-							<div class="row">
-								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<div class="grid">
-										<div class="row">
-											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-												<img id="banner" src="./img/Noticia1.jpg">
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noticias">
-												<h3 class="ff-amaranth">Estos son los juegos publicados para Dreamcast en 2017</h3>
-												<p class="ff-poppins">¿Sabías que siguen publicándose videojuegos en plataformas retro? Vamos a repasar los juegos que se han publicado en Dreamcast este 2017 que finaliza</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 							<div  class="row">
 								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<div class="grid">
-										<div class="row">
-											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-												<img id="banner" src="./img/Noticia6.jpg">
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noticias">
-												<h3 class="ff-amaranth">10 mejores juegos de PS4 este 2017</h3>
-												<p class="ff-poppins">¿Qué juegos crees que puedas encontrar en la lista? Ingresa y lo descubrirás</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-							<div  class="row">
-								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<div class="grid">	
+									<div class="grid" id="auth_xbox_halo">	
 										<div class="row">
 											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-												<img id="banner" src="./img/Noticia2.jpg">
+												<img id="banner" src="./img/hlao1.jpg">
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 noticias"  style="text-align: center; padding-top: 1em;">
+												<b class="ff-amaranth">Te damos la bienvenida al universo Halo</b>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div  class="row">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<div class="grid" style="padding-bottom: 20px;" id="auth_xbox_forza">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<img id="banner" src="./img/forza2.jpg">
 											</div>
 											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 noticias">
-												<b class="ff-amaranth">Localización de todas las fotos del Episodio 1 de Life is Strange para móviles</b>
+												<b class="ff-amaranth">Forza Horizon 3 en Xbox One X supera la versión de PC</b>
 											</div>
 										</div>
 									</div>
@@ -258,36 +272,59 @@
 							</div>
 							<div class="row">
 								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<div class="grid">
+									<div class="grid" id="auth_xbox_gears">
 										<div class="row">
 											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-												<img id="banner" src="./img/Noticia3.jpg">
+												<img id="banner" src="./img/gears1.jpg">
 											</div>
 										</div>
 										<div class="row">
 											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noticias">
-												<h3 class="ff-amaranth">Cuphead ya supera los 2 millones de unidades vendidas</h3>
-												<p class="ff-poppins">Cuphead ya supera los 2 millones de unidades vendidas en todo el mundo. Les hablamos del éxito del título de Microsoft y Studio MDHR para PC y Xbox One. Un excelente juego con increibles graficos y un diseño visual extraordinario</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div  class="row">
-								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<div class="grid" style="padding-bottom: 20px;">
-										<div class="row">
-											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-												<img id="banner" src="./img/Noticia8.png">
-											</div>
-											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 noticias">
-												<b class="ff-amaranth">Con OSU podras escuchar tu musica favorita mientras demuestras tus reflejos, ¿qué esperas? juegalo ya!</b>
+												<h3 class="ff-amaranth">¿Ya sabes del nuevo juego Gears of War 4?</h3>
+												<p class="ff-poppins">Gears of War 4 o Gears 4 es un videojuego de acción y shooter en tercera persona desarrollado por The Coalition y distribuido por Microsoft lanzado el 11 de octubre del 2016 para Xbox One y Windows 10.</p>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+								<div class="row">
+									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+										<div class="grid" id="auth_xbox_dayz">
+											<div class="row">
+												<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+													<img id="banner" src="./img/dayz1.jpg">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noticias">
+													<h3 class="ff-amaranth">DayZ llegará al Xbox Game Preview de Xbox One este año, antes que a PS4</h3>
+													<p class="ff-poppins">DayZ, el juego de accion y supervivencia zombi, llegará este mismo año a Xbox One.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div  class="row">
+									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+										<div class="grid" id="auth_xbox_one">
+											<div class="row">
+												<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+													<img id="banner" src="./img/xbox.jpg">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noticias">
+													<h3 class="ff-amaranth">Xbox One X aumentó los ingresos de la división de gaming de Microsoft</h3>
+													<p class="ff-poppins">Xbox LIVE tiene 59 millones de usuarios activos al mes.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 					</div>
 					<!-- Fin Noticias -->
 				</div>	
